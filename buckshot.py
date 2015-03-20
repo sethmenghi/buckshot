@@ -43,18 +43,14 @@ class Cluster(object):
                                     right_cluster=self.right, 
                                     left_cluster=old_left)
         self.right = y
-    
+        
         self.values = pd.concat([self.values, y.get_values()])
         #self.reevaluate_mean()
         self.mean = self.values.mean()
 
-    def centroid(self):
-        y = 0
-        self.length = len(self.values)
-        #for x in self.values:
-            #if want to get the mean distance df.apply(distance)
-            #print(self.values.mean())
-        #self.mean_distance = y/len(self.values)
+    def add(self, y):
+        self.values = pd.concat([self.values, y])
+        self.mean = self.values.mean()
 
     def mean(self):
         return self.mean
@@ -65,6 +61,8 @@ class Cluster(object):
     def len(self):
         self.length = len(self.values)
         return self.length
+
+    def intra_distance(self):
 
 
 
@@ -81,6 +79,8 @@ class Buckshot(object):
     data_name = 'adult-big'
     output = 'adult.out'
     continuous_cols =[]
+    nominal = []
+    
     def __init__(self, k=10):
         self.dataset = DATASET
         self.k = k
@@ -88,6 +88,7 @@ class Buckshot(object):
     def run(self):
         self.preprocess()
         self.hac()
+        self.k_means()
 
     def preprocess(self):
         self.load_df()
@@ -113,6 +114,7 @@ class Buckshot(object):
                 self.continuous_cols.append(col)
             else:
                 current.fillna(self.df[col].mode()[0], inplace=True)
+                self.nominal.append(col)
             self.df[col] = current
     
     def normalize_data(self):
@@ -185,6 +187,21 @@ class Buckshot(object):
         self.matrix = matrix
 
     def k_means(self):
+        n = len(self.remaining)
+        means = pd.Series([clust.mean() for clust in self.clusters])
+        for clust in self.clusters:
+            means.append(clust.mean())
+
+        distances = []
+        for i in range(0,n):
+            d = self.remaining.iloc[i]
+            for mean in means:
+                distances.append(distance(d,mean))
+            distances = np.array(distances)
+            min_dist = distances.where(distances == distances.min())
+            self.clusters[min_dist].add(d)
+
+
 
 def convert_class(val):
     if val == '<=50K':
@@ -249,6 +266,6 @@ class BuckshotFileError(Exception):
 
 
 if __name__ == '__main__':
-    b = Buckshot()
+    b = Buckshot(300)
     #ab.scipy_test()
     b.run()
