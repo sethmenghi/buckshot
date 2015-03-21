@@ -12,7 +12,7 @@ np.set_printoptions(precision=10)
 pd.set_option('display.precision',10)
 
 try:
-    with open("hac.cfg") as f:
+    with open("buckshot.cfg") as f:
         config = json.load(f)
     DPATH = config.get("data_path")
     DATASET = config.get("dataset")
@@ -23,9 +23,13 @@ except Exception as e:
 
 class Cluster(object):
     """Singular cluster."""
-    values = pd.DataFrame([])
-    
+
     def __init__(self, values, right_cluster=None, left_cluster=None):
+        self.values = pd.DataFrame([])
+
+        self.nominal = []
+        self.continuous = []
+
         self.right = right_cluster
         self.left = left_cluster
         if type(values) != type(self.values):
@@ -36,33 +40,38 @@ class Cluster(object):
         self.mean = self.values.mean()
         #self.values.append(values)
         #self.reevaluate_mean()
+        self.values = self.values.convert_objects(convert_numeric=True)
+        for col in self.values.columns:
+            current = self.values[col]
+            if current.dtype == 'float64':
+                self.continuous.append(col)
+            else:
+                self.nominal.append(col)
 
     def merge_clusters(self, y):
         old_left = self.left
-        self.left = Cluster(self.values, 
+        self.left = self.__class__(self.values, 
                                     right_cluster=self.right, 
                                     left_cluster=old_left)
         self.right = y
+        self.add(y.get_values())
+        print(self.values)
+        print(self.mean)
+        #self.mean = pd.concat([self.values[self.continuous].mean(), self.values[self.nominal].mode()])
         
-        self.values = pd.concat([self.values, y.get_values()])
-        #self.reevaluate_mean()
-        self.mean = self.values.mean()
-
     def add(self, y):
         self.values = pd.concat([self.values, y])
         self.mean = self.values.mean()
 
-    def mean(self):
-        return self.mean
-
     def get_values(self):
         return self.values
 
-    def len(self):
-        self.length = len(self.values)
-        return self.length
+    @classmethod
+    def len(cls):
+        cls.length = len(cls.values)
+        return cls.length
 
-    def intra_distance(self):
+    #def intra_distance(self):
 
 
 
@@ -80,7 +89,7 @@ class Buckshot(object):
     output = 'adult.out'
     continuous_cols =[]
     nominal = []
-    
+
     def __init__(self, k=10):
         self.dataset = DATASET
         self.k = k
@@ -119,7 +128,7 @@ class Buckshot(object):
     
     def normalize_data(self):
         """Normalizes all continuous values in dataFrame."""
-        self.df['class'] = self.df['class'].apply(convert_class)
+        #self.df['class'] = self.df['class'].apply(convert_class)
         int_df = self.df[self.continuous_cols]
         int_df = (int_df - int_df.mean()) / (int_df.max() - int_df.min())
         self.df[self.continuous_cols] = int_df
@@ -266,6 +275,6 @@ class BuckshotFileError(Exception):
 
 
 if __name__ == '__main__':
-    b = Buckshot(300)
+    b = Buckshot(50)
     #ab.scipy_test()
     b.run()
