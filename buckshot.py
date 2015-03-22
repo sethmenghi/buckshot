@@ -8,9 +8,24 @@ import random
 import math
 import matplotlib as plt
 import time
+import sys
+import logging
 
 np.set_printoptions(precision=10)
 pd.set_option('display.precision',10)
+
+# create logger with 'spam_application'
+logger = logging.getLogger('BUCKSHOT')
+logger.setLevel(logging.DEBUG)
+# create file handler which logs even debug messages
+fh = logging.FileHandler('buckshot.log')
+fh.setLevel(logging.DEBUG)
+# create formatter and add it to the handlers
+formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+# add the handlers to the logger
+logger.addHandler(fh)
+
 
 try:
     with open("buckshot.cfg") as f:
@@ -23,13 +38,21 @@ except Exception as e:
 
 
 class Cluster(object):
-    """Singular cluster."""
+    """A Cluster of similar values(tuples from adult.arff).
+
+    Attributes
+        values (pd.Series, pd.DataFrame): similar data grouped together
+        right_cluster (Cluster): right leaf Cluster
+        left_cluster (Cluster):  left leaf Cluster
+        verbose (Bool): whether to display anything
+    """
 
     def __init__(self, values, right_cluster=None, left_cluster=None, verbose=False):
         self.right = right_cluster
         self.left = left_cluster
-
+        #data frame for values
         self.values = pd.DataFrame([])
+        #if the type of values is a series, array, or raw data
         if type(values) != type(self.values):
             data = np.array([values.values])
             self.values = pd.DataFrame(data, columns=values.index.values, index=[values.name])
@@ -39,6 +62,7 @@ class Cluster(object):
 
         self.nominal = []
         self.continuous = []
+        #
         for col in self.values.columns:
             current = self.values[col]
             if current.dtype == 'float64':
@@ -50,7 +74,11 @@ class Cluster(object):
             #print("Centroid:", self.centroid)
 
     def merge_clusters(self, new_cluster):
-        """Merges two clusters together."""
+        """Merges two clusters together via Cluster.add()
+
+        Attributes
+            new_cluster (Cluster): cluster to add
+        """
         old_left = self.left
         self.left = self.__class__(self.values,
                                     right_cluster=self.right,
@@ -58,11 +86,14 @@ class Cluster(object):
                                     verbose=False)
         self.right = new_cluster
         self.add(new_cluster.get_values())
-        #self.mean = pd.concat([self.values[self.continuous].mean(), self.values[self.nominal].mode()])
 
     def add(self, new_values):
-        """Adds one cluster's values or a pd.Series to this."""
-        self.values = pd.concat([self.values, new_values])
+        """Adds one cluster's values or a pd.Series to this.
+
+        Attributes:
+            new_values (pd.DataFrame): dataFrame to concat onto self.values
+        """
+        self.values = self.values.append(new_values)
         self.calculate_centroid()
 
     def calculate_centroid(self):
@@ -70,13 +101,11 @@ class Cluster(object):
         mode = self.values[self.nominal].mode()
         if len(mode) == 0:
             mode = self.values[self.nominal].iloc[0]
-        #none of the columns can be Nan
-        if type(mode) is pd.DataFrame:
-            mode = self.values[self.nominal].iloc[0]
-            #if True in mode.isnull().iloc[0]:
-                #print(mode)
-            #mode = mode.iloc[0]
-        #concat into dataframe and grab the only value in series
+        #none of the columns can be Null
+        #df.mode() will return Nan if no columns with repeating data
+        if type(mode) == type(self.values):
+            if np.any(mode.isnull()):
+                mode = self.values[self.values[self.nominal].iloc[0]
         self.centroid = pd.concat([mean,mode], axis=0)
 
     def get_values(self):
@@ -156,8 +185,8 @@ class Buckshot(object):
     def get_random_samples(self):
         """Creates random sampled dataframe equal to sqrt(n)."""
         n = len(self.df.index)
-        sqrt_n = int(math.sqrt(n))
-        rows = random.sample(self.df.index, sqrt_n)
+        self.sqrt_n = int(math.sqrt(n))
+        rows = random.sample(self.df.index, self.sqrt_n)
         self.random = self.df.ix[rows]
         self.remaining = self.df.drop(rows)
 
@@ -220,8 +249,11 @@ class Buckshot(object):
         """Updates the similarity matrix to account for clusters with > 1 tuple."""
         #create new distance matrix
         n = len(self.clusters)
+
+        progress =  (self.sqrt_n - n) / (self.sqrt_n - self.k)
         matrix = np.empty(shape=[n,n])
-        print("Clusters: %s" % str(n))
+        sys.stdout.write("\rHAC  %0.2f%% Complete. Clusters: %s" % ((progress * 100), str(n)))
+        sys.stdout.flush()
 
         for cluster1 in self.clusters:
             r1 = cluster1.centroid
@@ -239,55 +271,48 @@ class Buckshot(object):
         """Clusters the remaining data into self.clusters based on the closest cluster."""
         n = len(self.remaining)
 
-        distances = []
+        # go in c
         for i in range(0,n):
             row = self.remaining.iloc[i]
-            for clust in self.clusters:
-                distances.append(distance(row,clust.centroid))
-            distances = np.array(distances)
+            distances = np.array([distance(row, clust.centroid) for clust in self.clusters])
             min_dist = np.where(distances == distances.min())[0][0]
             self.clusters[min_dist].add(row)
-            del distances
-            distances = []
+            progress = float(i)/float(n) * 100
+            sys.stdout.write("\rK-Means  %0.2f%% Complete. Iteration %s of %s. Time Elapsed: %0.2fs"
+                                % (progress, i, n, time.time() - self.time))
+            sys.stdout.flush()
 
     def print_report(self):
-        print("k: ", self.k)
-        self.measure_quality()
-        self.inter_dist()
+        sys.stdout.write("k: ", self.k)
+        sys.stdout.flush()
         self.cluster_sizes()
+        self.inter_dist()
         self.print_time()
 
     def print_time(self):
         stop = time.time()
-        print "Time: ", (self.time - self.stop)
-
-    def measure_quality(self):
-        ratio_class = self.values['class'].value_counts()
-        ratio1 = (self.values['class'].value_counts()[0])/len(self.values['class'])
-        ratio2 = (self.values['class'].value_counts()[1])/len(self.values['class'])
-        print "Quality Measure"
-        print self.values['class'].value_counts()
-        print ratio1
-        print ratio2
+        sys.stdout.write("Time: %0.2fs" % (self.time - stop))
+        sys.stdout.flush()
 
     def inter_dist(self):
         dist = 0
+        avg_ratio = 0
         for clust in self.clusters:
             dist += (1/(2*len(self.df)))*clust.intra_distance()
             ratio_class = clust.values['class'].value_counts()
-            ratio = (ratio_class[0]/len(clust.values['class']))
-            other = ((ratio_class[0]/len(clust.values['class'])))
-        print"Inter-Cluster Distance:",
-        print dist
+            avg_ratio += (ratio_class[0]/len(clust.values['class'].index))
+            other = (ratio_class[1]/len(clust.values.index))
+        sys.stdout.write("Inter-Cluster Distance: %f" % dist)
+        sys.stdout.write("Average Class Ratio: %f" % (avg_ratio/len(self.clusters)))
+        sys.stdout.flush()
 
     def cluster_sizes(self):
-        sizes = []
-        for clust in self.clusters(self):
-            sizes.append(len(cluster))
-        print "Cluster Sizes"
-        print "Largest: ", max(sizes)
-        print "Smallest:", min(sizes)
-        print "Average:", reduce(lambda x, y: x + y, sizes) / len(sizes)
+        sizes = np.array([len(clust.values.index) for clust in self.clusters])
+        sys.stdout.write("Cluster Sizes")
+        sys.stdout.write("Largest: %d" % sizes.max(axis=0))
+        sys.stdout.write("Smallest: %d" % sizes.min(axis=0))
+        sys.stdout.write("Average: %f" % np.mean(sizes))
+        sys.stdout.flush()
 
 def test(runs=5):
     for i in range(5,runs+5):
@@ -312,6 +337,7 @@ def distance(x, y, squared=False):
             dist = 0
             for i,v in x.iteritems():
                 j = v
+                #make sure to get correct index if series mooved around
                 k = y[i]
                 if type(j) == str:
                     if j == k:
@@ -325,12 +351,11 @@ def distance(x, y, squared=False):
                 dist = math.sqrt(dist)
             return dist
         except KeyError as e:
-            print x
-            print y
+            logger.debug(e)
+            logger.debug(x)
+            logger.debug(y)
             raise(e)
         except TypeError as t:
-            print x
-            print y
             raise(t)
 
 
@@ -367,7 +392,7 @@ class BuckshotFileError(Exception):
         return repr(self.msg)
 
 if __name__ == '__main__':
-    b = Buckshot(219)
+    b = Buckshot(10)
     b.run()
     b.print_report()
     test()
