@@ -7,6 +7,7 @@ import os
 import random
 import math
 import matplotlib as plt
+import time
 
 np.set_printoptions(precision=10)
 pd.set_option('display.precision',10)
@@ -45,31 +46,38 @@ class Cluster(object):
             else:
                 self.nominal.append(col)
         self.calculate_centroid()
-
-        if verbose is True:
-            print("Centroid:", self.centroid)
+        #if verbose is True:
+            #print("Centroid:", self.centroid)
 
     def merge_clusters(self, new_cluster):
+        """Merges two clusters together."""
         old_left = self.left
         self.left = self.__class__(self.values,
                                     right_cluster=self.right,
                                     left_cluster=old_left,
-                                    verbose=True)
+                                    verbose=False)
         self.right = new_cluster
         self.add(new_cluster.get_values())
         #self.mean = pd.concat([self.values[self.continuous].mean(), self.values[self.nominal].mode()])
 
     def add(self, new_values):
+        """Adds one cluster's values or a pd.Series to this."""
         self.values = pd.concat([self.values, new_values])
+        self.calculate_centroid()
 
     def calculate_centroid(self):
         mean = self.values[self.continuous].mean()
         mode = self.values[self.nominal].mode()
-        if len(mode.index) == 0:
+        if len(mode) == 0:
             mode = self.values[self.nominal].iloc[0]
+        #none of the columns can be Nan
+        if type(mode) is pd.DataFrame:
+            mode = self.values[self.nominal].iloc[0]
+            #if True in mode.isnull().iloc[0]:
+                #print(mode)
+            #mode = mode.iloc[0]
         #concat into dataframe and grab the only value in series
-        self.centroid = pd.concat([mean,mode], axis=1)
-        print(mean,mode)
+        self.centroid = pd.concat([mean,mode], axis=0)
 
     def get_values(self):
         return self.values
@@ -79,7 +87,7 @@ class Cluster(object):
         dist = 0
         for i in range(0, len(self)):
             row = self.values.iloc[i]
-            dist += distance(row, self.centroid)
+            dist += distance(row, self.centroid, True)
 
     @classmethod
     def len(cls):
@@ -92,7 +100,6 @@ class Buckshot(object):
 
     Linkage = Centroid
 
-
     Attributes
         k (int): Number of clusters.
     """
@@ -103,6 +110,7 @@ class Buckshot(object):
     def __init__(self, k=10):
         self.dataset = DATASET
         self.k = k
+        self.time = time.time()
 
     def run(self):
         """Runs preprocessing, hac, and k_means."""
@@ -230,21 +238,62 @@ class Buckshot(object):
     def k_means(self):
         """Clusters the remaining data into self.clusters based on the closest cluster."""
         n = len(self.remaining)
-        means = pd.Series([clust.centroid for clust in self.clusters])
-        print(means)
-        #for clust in self.clusters:
-           # means.append(clust.centroid)
 
         distances = []
         for i in range(0,n):
             row = self.remaining.iloc[i]
-            for mean in means:
-                distances.append(distance(row,mean))
+            for clust in self.clusters:
+                distances.append(distance(row,clust.centroid))
             distances = np.array(distances)
-            min_dist = distances.where(distances == distances.min())
-            print(min_dist)
+            min_dist = np.where(distances == distances.min())[0][0]
             self.clusters[min_dist].add(row)
+            del distances
+            distances = []
 
+    def print_report(self):
+        print("k: ", self.k)
+        self.measure_quality()
+        self.inter_dist()
+        self.cluster_sizes()
+        self.print_time()
+
+    def print_time(self):
+        stop = time.time()
+        print "Time: ", (self.time - self.stop)
+
+    def measure_quality(self):
+        ratio_class = self.values['class'].value_counts()
+        ratio1 = (self.values['class'].value_counts()[0])/len(self.values['class'])
+        ratio2 = (self.values['class'].value_counts()[1])/len(self.values['class'])
+        print "Quality Measure"
+        print self.values['class'].value_counts()
+        print ratio1
+        print ratio2
+
+    def inter_dist(self):
+        dist = 0
+        for clust in self.clusters:
+            dist += (1/(2*len(self.df)))*clust.intra_distance()
+            ratio_class = clust.values['class'].value_counts()
+            ratio = (ratio_class[0]/len(clust.values['class']))
+            other = ((ratio_class[0]/len(clust.values['class'])))
+        print"Inter-Cluster Distance:",
+        print dist
+
+    def cluster_sizes(self):
+        sizes = []
+        for clust in self.clusters(self):
+            sizes.append(len(cluster))
+        print "Cluster Sizes"
+        print "Largest: ", max(sizes)
+        print "Smallest:", min(sizes)
+        print "Average:", reduce(lambda x, y: x + y, sizes) / len(sizes)
+
+def test(runs=5):
+    for i in range(5,runs+5):
+        b = Buckshot(i*5)
+        b.run()
+        b.print_report()
 
 def distance(x, y, squared=False):
         """Returns Euclidean distance of two matrices/vectors.
@@ -259,23 +308,30 @@ def distance(x, y, squared=False):
             dist (float64): distance between x and y
 
         """
-        dist = 0
-        for i,v in x.iteritems():
-            j = v
-            k = y[i]
-            if type(j) == str:
-                if j == k:
-                    k = 0
-                    j = 0
-                else:
-                    j = 0
-                    k = 1
-            dist += (j-k)**2
-            #time.sleep(.01)
-        if squared == False:
-            dist = math.sqrt(dist)
-        #print(dist)
-        return dist
+        try:
+            dist = 0
+            for i,v in x.iteritems():
+                j = v
+                k = y[i]
+                if type(j) == str:
+                    if j == k:
+                        k = 0
+                        j = 0
+                    else:
+                        j = 0
+                        k = 1
+                dist += (j-k)**2
+            if squared == False:
+                dist = math.sqrt(dist)
+            return dist
+        except KeyError as e:
+            print x
+            print y
+            raise(e)
+        except TypeError as t:
+            print x
+            print y
+            raise(t)
 
 
 def load_arff_to_df(filepath):
@@ -310,8 +366,8 @@ class BuckshotFileError(Exception):
     def __str__(self):
         return repr(self.msg)
 
-
 if __name__ == '__main__':
-    b = Buckshot(50)
-    #ab.scipy_test()
+    b = Buckshot(219)
     b.run()
+    b.print_report()
+    test()
