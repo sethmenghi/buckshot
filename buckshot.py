@@ -32,6 +32,7 @@ try:
         config = json.load(f)
     DPATH = config.get("data_path")
     DATASET = config.get("dataset")
+    ALL_COLORS = config.get("colors")
 except Exception as e:
     print(e)
     print("Make sure the config file data_path is setup.")
@@ -148,6 +149,7 @@ class Buckshot(object):
     data_name = 'adult-big'
     output = 'adult.out'
     class_label = 'class'
+    colors = ALL_COLORS
 
     def __init__(self, k=10):
         self.dataset = DATASET
@@ -168,7 +170,7 @@ class Buckshot(object):
         self.normalize_data()
 
     def print_report(self):
-        logger.warn("Clusters (k): %d" % self.k)
+        logger.warn("\nClusters (k): %d" % self.k)
         logger.warn("Samples: %d" % len(self.df.index))
         logger.warn("Class: %s" % self.class_label)
         sys.stdout.flush()
@@ -295,9 +297,10 @@ class Buckshot(object):
                 i2 = self.clusters.index(cluster2)
                 matrix[i1][i2] = distance(r1, r2, ignore_class=ignore_class)
 
-        np.fill_diagonal(matrix, np.inf)
         del self.matrix
+        np.fill_diagonal(matrix, np.inf)
         self.matrix = matrix
+
 
     def k_means(self):
         """Clusters the remaining data into self.clusters based on the closest cluster."""
@@ -310,7 +313,7 @@ class Buckshot(object):
             min_dist = np.where(distances == distances.min())[0][0]
             self.clusters[min_dist].add(row)
             progress = i/n * 100
-            sys.stdout.write("\rK-Means  %0.2f%% Complete. Iteration %s of %s. Time Elapsed: %0.2fs                "
+            sys.stdout.write("\rK-Means  %0.2f%% Complete. Iteration %s of %s. Time Elapsed: %0.2fs                   "
                                 % (progress, i, n, time.time() - self.time))
             sys.stdout.flush()
 
@@ -364,28 +367,12 @@ class Buckshot(object):
         logger.warn("Time: %0.2fs\n\n" % (stop- self.time))
 
     def plot_clusters(self, x_axis='age', y_axis='hours_per_week'):
-        x_axis = 'age'
-        y_axis = 'hours_per_week'
-
-        self.colors =    ['#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
-                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
-                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
-                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
-                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
-                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
-                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
-                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47']
-
         ax = self.clusters[0].values.plot(kind='scatter', color=self.colors[0],
                                           label="Cluster1", x=x_axis, y=y_axis)
         centroid = pd.DataFrame([self.clusters[0].centroid])
         title = str(self.k) + "-Buckshot Cluster"
-        centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + 1),
-                      label='Centroid', colors='k', ax=ax)
+        centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + str(1)),
+                      label='Centroid', color='k', ax=ax)
         fig = ax.get_figure()
         fig.savefig("graphs/%d-buckshot-cluster1_%s-%s.png" % (self.k, x_axis, y_axis))
         for i in range(1,len(self.clusters)):
@@ -395,12 +382,12 @@ class Buckshot(object):
                                          color=self.colors[i], label=label, ax=ax)
             # create graph for just this cluster
             dx = self.clusters[i].values.plot(kind='scatter', x=x_axis, y=y_axis,
-                                              title=(title+i),label=label,
+                                              title=(title+str(i+1)),label=label,
                                               color=self.colors[i])
             #plot centroids
             centroid = pd.DataFrame([self.clusters[i].centroid])
             centroid.plot(kind='scatter', x=x_axis, y=y_axis,
-                          label='Centroid', colors='k', ax=dx)
+                          label='Centroid', color='k', ax=dx)
 
             fig = dx.get_figure()
             fig.savefig("graphs/%d-buckshot-cluster%d_%s-%s.png" % (self.k, i, x_axis, y_axis))
@@ -418,6 +405,7 @@ class Buckshot(object):
         ex = self.ratios.plot(kind='line', x='cluster', y='<=50K', title="<=50K Ratios")
         fig = ex.get_figure()
         fig.savefig('graphs/%d-buckshot_<=50K_ratios.png' % self.k)
+
 
 def distance(x, y, squared=False, ignore_class=True):
         """Returns Euclidean distance of two matrices/vectors.
@@ -494,8 +482,8 @@ class BuckshotFileError(Exception):
 
 
 def test(runs=5):
-    for i in range(2,runs+5):
-        if i is 10:
+    for i in range(3,runs+5):
+        if i is 2:
             continue
         b = Buckshot(i*5)
         b.run()
@@ -507,7 +495,8 @@ def test(runs=5):
 
 
 if __name__ == '__main__':
-    b = Buckshot(10)
+    b = Buckshot(5)
     b.run()
     b.print_report()
-    test()
+    b.plot_clusters()
+    b.plot_ratios()
