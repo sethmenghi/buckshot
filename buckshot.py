@@ -18,10 +18,10 @@ pd.set_option('display.precision',10)
 logger = logging.getLogger('Buckshot')
 logger.setLevel(logging.DEBUG)
 #  create file handler which logs even debug messages
-fh = logging.FileHandler('results_test.log')
+fh = logging.FileHandler('results.log')
 fh.setLevel(logging.DEBUG)
 #  create formatter and add it to the handlers
-formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(message)s')
 fh.setFormatter(formatter)
 #  add the handlers to the logger
 logger.addHandler(fh)
@@ -367,22 +367,18 @@ class Buckshot(object):
         x_axis = 'age'
         y_axis = 'hours_per_week'
 
-        self.colors = ['#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47']
+        self.colors =    ['#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797', 
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797', 
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797', 
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797', 
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47']
 
         ax = self.clusters[0].values.plot(kind='scatter', color=self.colors[0],
                                           label="Cluster1", x=x_axis, y=y_axis)
@@ -500,9 +496,12 @@ class BuckshotFileError(Exception):
 def test(runs=5):
     for i in range(2,runs+5):
         b = Buckshot(i*5)
-        self.run()
-        self.print_report()
-
+        b.run()
+        b.print_report()
+        b.plot_clusters()
+        b.plot_clusters(x_axis='education_num',y_axis='occupation')
+        b.plot_clusters(x_axis='education',y_axis='workclass')
+        b.plot_ratios()
 
 if __name__ == '__main__':
     b = Buckshot(10)
