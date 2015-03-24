@@ -21,7 +21,7 @@ logger.setLevel(logging.DEBUG)
 fh = logging.FileHandler('results_test.log')
 fh.setLevel(logging.DEBUG)
 #  create formatter and add it to the handlers
-formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(message)s')
 fh.setFormatter(formatter)
 #  add the handlers to the logger
 logger.addHandler(fh)
@@ -168,9 +168,9 @@ class Buckshot(object):
         self.normalize_data()
 
     def print_report(self):
-        logger.warn("Samples: %d\n" % len(self.df.index))
+        logger.warn("Clusters (k): %d" % self.k)
+        logger.warn("Samples: %d" % len(self.df.index))
         logger.warn("Class: %s" % self.class_label)
-        logger.warn("\nClusters (k): %d\n" % self.k)
         sys.stdout.flush()
         self.cluster_sizes()
         self.ratios_and_inter_distance()
@@ -310,17 +310,17 @@ class Buckshot(object):
             min_dist = np.where(distances == distances.min())[0][0]
             self.clusters[min_dist].add(row)
             progress = i/n * 100
-            sys.stdout.write("\rK-Means  %0.2f%% Complete. Iteration %s of %s. Time Elapsed: %0.2fs            "
+            sys.stdout.write("\rK-Means  %0.2f%% Complete. Iteration %s of %s. Time Elapsed: %0.2fs                "
                                 % (progress, i, n, time.time() - self.time))
             sys.stdout.flush()
 
 
     def cluster_sizes(self):
         sizes = np.array([len(clust.values.index) for clust in self.clusters])
-        logger.warn("Cluster Sizes\n")
-        logger.warn("Largest: %d\n" % sizes.max(axis=0))
-        logger.warn("Smallest: %d\n" % sizes.min(axis=0))
-        logger.warn("Average: %0.0f\n" % np.mean(sizes))
+        logger.warn("Cluster Sizes")
+        logger.warn("Largest: %d" % sizes.max(axis=0))
+        logger.warn("Smallest: %d" % sizes.min(axis=0))
+        logger.warn("Average: %0.0f" % np.mean(sizes))
 
     def ratios_and_inter_distance(self):
         """Calculates the inter distance with square sum of error and
@@ -356,39 +356,35 @@ class Buckshot(object):
         logger.warn("Average Class Ratio")
         for i in self.avg_ratio:
             logger.warn("%s: %f\n" % (i,(self.avg_ratio[i]/len(self.clusters))))
-        logger.warn("Inter-Cluster Distance: %f\n" % inter_dist)
+        logger.warn("Inter-Cluster Distance: %f" % inter_dist)
         self.inter_dist = inter_dist
 
     def print_time(self):
         stop = time.time()
-        logger.warn("Time: %0.2fs\n\n" % (self.time - stop))
+        logger.warn("Time: %0.2fs\n\n" % (stop- self.time))
 
     def plot_clusters(self, x_axis='age', y_axis='hours_per_week'):
         x_axis = 'age'
         y_axis = 'hours_per_week'
 
-        self.colors = ['#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47','#99b433', '#00a300',
-                          '#1e7145', '#ff0097', '#9f00a7',
-                          '#7e3878', '#603cba', '#1d1d1d', '#eff4ff',
-                          '#2d89ef', '#2b5797', '#ffc40d', '#e3a21a', '#da532c',
-                          '#ee1111', '#b91d47']
+        self.colors =    ['#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47',
+                          '#99b433', '#00a300', '#1e7145', '#ff0097', '#9f00a7',
+                          '#7e3878', '#603cba', '#1d1d1d', '#2d89ef', '#2b5797',
+                          '#ffc40d', '#e3a21a', '#da532c', '#ee1111', '#b91d47']
 
         ax = self.clusters[0].values.plot(kind='scatter', color=self.colors[0],
                                           label="Cluster1", x=x_axis, y=y_axis)
         centroid = pd.DataFrame([self.clusters[0].centroid])
         title = str(self.k) + "-Buckshot Cluster"
-        centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + 1), 
+        centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + 1),
                       label='Centroid', colors='k', ax=ax)
         fig = ax.get_figure()
         fig.savefig("graphs/%d-buckshot-cluster1_%s-%s.png" % (self.k, x_axis, y_axis))
@@ -399,11 +395,11 @@ class Buckshot(object):
                                          color=self.colors[i], label=label, ax=ax)
             # create graph for just this cluster
             dx = self.clusters[i].values.plot(kind='scatter', x=x_axis, y=y_axis,
-                                              title=(title+i),label=label, 
+                                              title=(title+i),label=label,
                                               color=self.colors[i])
             #plot centroids
             centroid = pd.DataFrame([self.clusters[i].centroid])
-            centroid.plot(kind='scatter', x=x_axis, y=y_axis, 
+            centroid.plot(kind='scatter', x=x_axis, y=y_axis,
                           label='Centroid', colors='k', ax=dx)
 
             fig = dx.get_figure()
@@ -499,9 +495,15 @@ class BuckshotFileError(Exception):
 
 def test(runs=5):
     for i in range(2,runs+5):
+        if i is 10:
+            continue
         b = Buckshot(i*5)
-        self.run()
-        self.print_report()
+        b.run()
+        b.print_report()
+        b.plot_clusters()
+        b.plot_ratios()
+        b.plot_clusters(x_axis='education_num', y_axis='capital_gain')
+        b.plot_clusters(x_axis='education_num', y_axis='hours_per_week')
 
 
 if __name__ == '__main__':

@@ -7,6 +7,8 @@ Seth Menghi
 Nazli, Data Mining
 
 
+***********buckshot.cfg needs to be set to where the adult-big.arff folder is. checkout
+***********There needs to be a graphs folder in the directory where buckshot.py is running as well
 Breakdown of Algorithm:
     1. Convert .arff to .csv for pandas
 
@@ -38,6 +40,11 @@ Breakdown of Algorithm:
         (a) Find the intra-cluster distance
                 The sum of the euclidean squared distance
                 See: Cluster.intra_distance()
+
+    7. Graphs + plots
+        (a) I included the ability to plot graphs if there is a graphs folder.
+            It is nice to visualize the data with the centroids and the amount of values per class.
+        (b) YOU NEED TO CREATE A .../buckshot/graphs folder for this to run.
 
 
 
