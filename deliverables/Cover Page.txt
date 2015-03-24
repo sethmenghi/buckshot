@@ -1,0 +1,16 @@
+Cover Page
+
+author:    Seth Menghi
+algorithm: Buckshot Clustering
+
+(a) Status: Complete
+(b) Time Spent: 40-50 hours
+(c) I wish that we were told more tiny details about the project.
+    There wasn't really anything that I didn't learn from emailing Luca though.
+    Most things were pretty clear. I don't really understand whats different from
+    the experimental plan and the design, so I wish it said more about what we needed for
+    the Results/Analysis.
+
+
+
+

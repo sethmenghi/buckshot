@@ -1,0 +1,129 @@
+Report & Analysis
+
+1. The algorithm takes a significant amount of time to run.
+    (a) ~1200 seconds to cluster all of the data and calculate ratios/inter-distances
+    (b) Most of that time is spent in distances(x,y) due to the continually calculation of the similarity matrix
+        and the distances between every centroid and non-clustered point for K-Means. (sqrt(n)^2 + (n-sqrt_n))
+
+2. As K decreased:
+        Min sized cluster increased
+        Avg sized cluster increased
+        Max sized cluster increased
+
+3. As K increased:
+    Avg ratio approached ['<=50K':.75], ['>50K':.25] as seen in 100, 150, 200
+    This trend is only after 100. Before values ranged between .2-.25
+
+    Inter-Cluster Distance decreased.
+
+Conclusion:
+    As K increases so does the total sizes of the clusters, which makes sense as
+    there were many more clusters to for values to be assigned and they were spread out more.
+
+    The average class ratios hovered around (.2, .25) and (.74, .79),
+    which makes sense since there was a little more than 3 times the
+    amount of <=50K tuples compared to <50K.
+
+    This average class ratio (3x) effect was more easily noticable when there was a higher K.
+    100,150,200 all had avg ratios close to .75.
+
+    Inter-cluster distance dropped as there were more clusters, which is expected.
+
+    After looking through the graphs it became very noticable that there was usually one cluster
+    that had many more values than the others.
+        Checkout graphs/populations for that data
+
+
+Check out raw_data.txt for more like:
+
+Clusters (k): 25
+Samples: 48842
+Class: class
+
+Cluster Sizes
+Largest: 7394
+Smallest: 174
+Average: 1954
+
+Average Class Ratio
+>50K: 0.247151
+<=50K: 0.752849
+
+Inter-Cluster Distance: 64690.866722
+Time: 769.51s
+
+Cluster 1
+<=50K Ratio: 0.889505
+>50K Ratio: 0.110495
+Cluster 2
+>50K Ratio: 0.753465
+<=50K Ratio: 0.246535
+Cluster 3
+<=50K Ratio: 0.961309
+>50K Ratio: 0.038691
+Cluster 4
+<=50K Ratio: 0.936306
+>50K Ratio: 0.063694
+Cluster 5
+<=50K Ratio: 0.994458
+>50K Ratio: 0.005542
+Cluster 6
+<=50K Ratio: 0.821839
+>50K Ratio: 0.178161
+Cluster 7
+<=50K Ratio: 0.932177
+>50K Ratio: 0.067823
+Cluster 8
+>50K Ratio: 0.823944
+<=50K Ratio: 0.176056
+Cluster 9
+<=50K Ratio: 0.924400
+>50K Ratio: 0.075600
+Cluster 10
+<=50K Ratio: 0.977258
+>50K Ratio: 0.022742
+Cluster 11
+>50K Ratio: 0.887665
+<=50K Ratio: 0.112335
+Cluster 12
+<=50K Ratio: 0.988641
+>50K Ratio: 0.011359
+Cluster 13
+<=50K Ratio: 0.991945
+>50K Ratio: 0.008055
+Cluster 14
+>50K Ratio: 0.792857
+<=50K Ratio: 0.207143
+Cluster 15
+<=50K Ratio: 0.865471
+>50K Ratio: 0.134529
+Cluster 16
+<=50K Ratio: 0.996182
+>50K Ratio: 0.003818
+Cluster 17
+<=50K Ratio: 0.985452
+>50K Ratio: 0.014548
+Cluster 18
+<=50K Ratio: 0.943734
+>50K Ratio: 0.056266
+Cluster 19
+<=50K Ratio: 0.884680
+>50K Ratio: 0.115320
+Cluster 20
+<=50K Ratio: 0.984356
+>50K Ratio: 0.015644
+Cluster 21
+<=50K Ratio: 0.871960
+>50K Ratio: 0.128040
+Cluster 22
+>50K Ratio: 0.897415
+<=50K Ratio: 0.102585
+Cluster 23
+>50K Ratio: 0.836761
+<=50K Ratio: 0.163239
+Cluster 24
+<=50K Ratio: 0.981298
+>50K Ratio: 0.018702
+Cluster 25
+<=50K Ratio: 0.882353
+>50K Ratio: 0.117647

@@ -495,7 +495,7 @@ def test(runs=5):
 
 
 if __name__ == '__main__':
-    b = Buckshot(5)
+    b = Buckshot(int(sys.argv[1]))
     b.run()
     b.print_report()
     b.plot_clusters()

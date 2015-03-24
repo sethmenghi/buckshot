@@ -1,0 +1,2954 @@
+Clusters (k): 25
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 6821
+Smallest: 203
+Average: 1954
+Cluster 1  
+Label: <=50K Ratio: 0.944512
+Label: >50K Ratio: 0.055488
+Cluster 2  
+Label: <=50K Ratio: 0.993307
+Label: >50K Ratio: 0.006693
+Cluster 3  
+Label: >50K Ratio: 0.809948
+Label: <=50K Ratio: 0.190052
+Cluster 4  
+Label: <=50K Ratio: 0.990997
+Label: >50K Ratio: 0.009003
+Cluster 5  
+Label: >50K Ratio: 0.699140
+Label: <=50K Ratio: 0.300860
+Cluster 6  
+Label: >50K Ratio: 0.767263
+Label: <=50K Ratio: 0.232737
+Cluster 7  
+Label: <=50K Ratio: 0.979073
+Label: >50K Ratio: 0.020927
+Cluster 8  
+Label: <=50K Ratio: 0.979115
+Label: >50K Ratio: 0.020885
+Cluster 9  
+Label: <=50K Ratio: 0.965278
+Label: >50K Ratio: 0.034722
+Cluster 10  
+Label: <=50K Ratio: 0.978632
+Label: >50K Ratio: 0.021368
+Cluster 11  
+Label: <=50K Ratio: 0.809621
+Label: >50K Ratio: 0.190379
+Cluster 12  
+Label: <=50K Ratio: 0.981949
+Label: >50K Ratio: 0.018051
+Cluster 13  
+Label: <=50K Ratio: 0.850667
+Label: >50K Ratio: 0.149333
+Cluster 14  
+Label: <=50K Ratio: 0.921088
+Label: >50K Ratio: 0.078912
+Cluster 15  
+Label: <=50K Ratio: 0.923594
+Label: >50K Ratio: 0.076406
+Cluster 16  
+Label: >50K Ratio: 0.897824
+Label: <=50K Ratio: 0.102176
+Cluster 17  
+Label: <=50K Ratio: 0.847176
+Label: >50K Ratio: 0.152824
+Cluster 18  
+Label: <=50K Ratio: 0.996641
+Label: >50K Ratio: 0.003359
+Cluster 19  
+Label: <=50K Ratio: 0.935467
+Label: >50K Ratio: 0.064533
+Cluster 20  
+Label: <=50K Ratio: 0.979890
+Label: >50K Ratio: 0.020110
+Cluster 21  
+Label: <=50K Ratio: 0.821661
+Label: >50K Ratio: 0.178339
+Cluster 22  
+Label: <=50K Ratio: 0.760446
+Label: >50K Ratio: 0.239554
+Cluster 23  
+Label: <=50K Ratio: 0.931429
+Label: >50K Ratio: 0.068571
+Cluster 24  
+Label: >50K Ratio: 0.768473
+Label: <=50K Ratio: 0.231527
+Cluster 25  
+Label: >50K Ratio: 0.844740
+Label: <=50K Ratio: 0.155260
+Average Class Ratio
+>50K: 0.247874
+
+<=50K: 0.752126
+
+Inter-Cluster Distance: 64850.707050
+Time: 762.85s
+
+
+Clusters (k): 25
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 7394
+Smallest: 174
+Average: 1954
+Cluster 1  
+Label: <=50K Ratio: 0.889505
+Label: >50K Ratio: 0.110495
+Cluster 2  
+Label: >50K Ratio: 0.753465
+Label: <=50K Ratio: 0.246535
+Cluster 3  
+Label: <=50K Ratio: 0.961309
+Label: >50K Ratio: 0.038691
+Cluster 4  
+Label: <=50K Ratio: 0.936306
+Label: >50K Ratio: 0.063694
+Cluster 5  
+Label: <=50K Ratio: 0.994458
+Label: >50K Ratio: 0.005542
+Cluster 6  
+Label: <=50K Ratio: 0.821839
+Label: >50K Ratio: 0.178161
+Cluster 7  
+Label: <=50K Ratio: 0.932177
+Label: >50K Ratio: 0.067823
+Cluster 8  
+Label: >50K Ratio: 0.823944
+Label: <=50K Ratio: 0.176056
+Cluster 9  
+Label: <=50K Ratio: 0.924400
+Label: >50K Ratio: 0.075600
+Cluster 10  
+Label: <=50K Ratio: 0.977258
+Label: >50K Ratio: 0.022742
+Cluster 11  
+Label: >50K Ratio: 0.887665
+Label: <=50K Ratio: 0.112335
+Cluster 12  
+Label: <=50K Ratio: 0.988641
+Label: >50K Ratio: 0.011359
+Cluster 13  
+Label: <=50K Ratio: 0.991945
+Label: >50K Ratio: 0.008055
+Cluster 14  
+Label: >50K Ratio: 0.792857
+Label: <=50K Ratio: 0.207143
+Cluster 15  
+Label: <=50K Ratio: 0.865471
+Label: >50K Ratio: 0.134529
+Cluster 16  
+Label: <=50K Ratio: 0.996182
+Label: >50K Ratio: 0.003818
+Cluster 17  
+Label: <=50K Ratio: 0.985452
+Label: >50K Ratio: 0.014548
+Cluster 18  
+Label: <=50K Ratio: 0.943734
+Label: >50K Ratio: 0.056266
+Cluster 19  
+Label: <=50K Ratio: 0.884680
+Label: >50K Ratio: 0.115320
+Cluster 20  
+Label: <=50K Ratio: 0.984356
+Label: >50K Ratio: 0.015644
+Cluster 21  
+Label: <=50K Ratio: 0.871960
+Label: >50K Ratio: 0.128040
+Cluster 22  
+Label: >50K Ratio: 0.897415
+Label: <=50K Ratio: 0.102585
+Cluster 23  
+Label: >50K Ratio: 0.836761
+Label: <=50K Ratio: 0.163239
+Cluster 24  
+Label: <=50K Ratio: 0.981298
+Label: >50K Ratio: 0.018702
+Cluster 25  
+Label: <=50K Ratio: 0.882353
+Label: >50K Ratio: 0.117647
+Average Class Ratio
+>50K: 0.247151
+
+<=50K: 0.752849
+
+Inter-Cluster Distance: 64690.866722
+Time: 769.51s
+
+
+Clusters (k): 20
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 10247
+Smallest: 208
+Average: 2442
+Cluster 1  
+Label: <=50K Ratio: 0.978935
+Label: >50K Ratio: 0.021065
+Cluster 2  
+Label: <=50K Ratio: 0.776618
+Label: >50K Ratio: 0.223382
+Cluster 3  
+Label: <=50K Ratio: 0.995192
+Label: >50K Ratio: 0.004808
+Cluster 4  
+Label: <=50K Ratio: 0.989221
+Label: >50K Ratio: 0.010779
+Cluster 5  
+Label: >50K Ratio: 0.879409
+Label: <=50K Ratio: 0.120591
+Cluster 6  
+Label: <=50K Ratio: 0.997972
+Label: >50K Ratio: 0.002028
+Cluster 7  
+Label: >50K Ratio: 0.889299
+Label: <=50K Ratio: 0.110701
+Cluster 8  
+Label: <=50K Ratio: 0.997258
+Label: >50K Ratio: 0.002742
+Cluster 9  
+Label: <=50K Ratio: 0.897035
+Label: >50K Ratio: 0.102965
+Cluster 10  
+Label: <=50K Ratio: 0.971268
+Label: >50K Ratio: 0.028732
+Cluster 11  
+Label: >50K Ratio: 0.728316
+Label: <=50K Ratio: 0.271684
+Cluster 12  
+Label: <=50K Ratio: 0.847632
+Label: >50K Ratio: 0.152368
+Cluster 13  
+Label: <=50K Ratio: 0.966983
+Label: >50K Ratio: 0.033017
+Cluster 14  
+Label: <=50K Ratio: 0.911175
+Label: >50K Ratio: 0.088825
+Cluster 15  
+Label: <=50K Ratio: 0.941385
+Label: >50K Ratio: 0.058615
+Cluster 16  
+Label: >50K Ratio: 0.840000
+Label: <=50K Ratio: 0.160000
+Cluster 17  
+Label: <=50K Ratio: 0.992638
+Label: >50K Ratio: 0.007362
+Cluster 18  
+Label: <=50K Ratio: 0.993146
+Label: >50K Ratio: 0.006854
+Cluster 19  
+Label: <=50K Ratio: 0.750000
+Label: >50K Ratio: 0.250000
+Cluster 20  
+Label: <=50K Ratio: 0.912670
+Label: >50K Ratio: 0.087330
+Average Class Ratio
+>50K: 0.220895
+
+<=50K: 0.779105
+
+Inter-Cluster Distance: 66483.458564
+Time: 708.02s
+
+
+
+Clusters (k): 15
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 12369
+Smallest: 264
+Average: 3256
+Cluster 1  
+Label: <=50K Ratio: 0.995388
+Label: >50K Ratio: 0.004612
+Cluster 2  
+Label: <=50K Ratio: 0.810817
+Label: >50K Ratio: 0.189183
+Cluster 3  
+Label: <=50K Ratio: 0.959738
+Label: >50K Ratio: 0.040262
+Cluster 4  
+Label: >50K Ratio: 0.845361
+Label: <=50K Ratio: 0.154639
+Cluster 5  
+Label: <=50K Ratio: 0.732177
+Label: >50K Ratio: 0.267823
+Cluster 6  
+Label: >50K Ratio: 0.548161
+Label: <=50K Ratio: 0.451839
+Cluster 7  
+Label: <=50K Ratio: 0.772727
+Label: >50K Ratio: 0.227273
+Cluster 8  
+Label: <=50K Ratio: 0.992104
+Label: >50K Ratio: 0.007896
+Cluster 9  
+Label: >50K Ratio: 0.838087
+Label: <=50K Ratio: 0.161913
+Cluster 10  
+Label: <=50K Ratio: 0.926592
+Label: >50K Ratio: 0.073408
+Cluster 11  
+Label: <=50K Ratio: 0.987597
+Label: >50K Ratio: 0.012403
+Cluster 12  
+Label: <=50K Ratio: 0.952055
+Label: >50K Ratio: 0.047945
+Cluster 13  
+Label: <=50K Ratio: 0.941156
+Label: >50K Ratio: 0.058844
+Cluster 14  
+Label: <=50K Ratio: 0.951899
+Label: >50K Ratio: 0.048101
+Cluster 15  
+Label: <=50K Ratio: 0.994318
+Label: >50K Ratio: 0.005682
+Average Class Ratio
+>50K: 0.214336
+
+<=50K: 0.785664
+
+Inter-Cluster Distance: 69080.853859
+Time: 836.39s
+
+
+
+Clusters (k): 50
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 4971
+Smallest: 44
+Average: 977
+Cluster 1  
+Label: <=50K Ratio: 0.977930
+Label: >50K Ratio: 0.022070
+Cluster 2  
+Label: <=50K Ratio: 0.897971
+Label: >50K Ratio: 0.102029
+Cluster 3  
+Label: <=50K Ratio: 0.948505
+Label: >50K Ratio: 0.051495
+Cluster 4  
+Label: <=50K Ratio: 0.911940
+Label: >50K Ratio: 0.088060
+Cluster 5  
+Label: <=50K Ratio: 0.927033
+Label: >50K Ratio: 0.072967
+Cluster 6  
+Label: >50K Ratio: 0.673108
+Label: <=50K Ratio: 0.326892
+Cluster 7  
+Label: >50K Ratio: 0.951781
+Label: <=50K Ratio: 0.048219
+Cluster 8  
+Label: >50K Ratio: 0.839695
+Label: <=50K Ratio: 0.160305
+Cluster 9  
+Label: <=50K Ratio: 0.957364
+Label: >50K Ratio: 0.042636
+Cluster 10  
+Label: >50K Ratio: 0.924623
+Label: <=50K Ratio: 0.075377
+Cluster 11  
+Label: <=50K Ratio: 1.000000
+Cluster 12  
+Label: >50K Ratio: 0.941412
+Label: <=50K Ratio: 0.058588
+Cluster 13  
+Label: <=50K Ratio: 1.000000
+Cluster 14  
+Label: <=50K Ratio: 0.942211
+Label: >50K Ratio: 0.057789
+Cluster 15  
+Label: <=50K Ratio: 0.949153
+Label: >50K Ratio: 0.050847
+Cluster 16  
+Label: >50K Ratio: 0.939394
+Label: <=50K Ratio: 0.060606
+Cluster 17  
+Label: <=50K Ratio: 0.998609
+Label: >50K Ratio: 0.001391
+Cluster 18  
+Label: <=50K Ratio: 0.918868
+Label: >50K Ratio: 0.081132
+Cluster 19  
+Label: <=50K Ratio: 0.994350
+Label: >50K Ratio: 0.005650
+Cluster 20  
+Label: <=50K Ratio: 0.968750
+Label: >50K Ratio: 0.031250
+Cluster 21  
+Label: <=50K Ratio: 0.966667
+Label: >50K Ratio: 0.033333
+Cluster 22  
+Label: >50K Ratio: 0.808318
+Label: <=50K Ratio: 0.191682
+Cluster 23  
+Label: <=50K Ratio: 0.860759
+Label: >50K Ratio: 0.139241
+Cluster 24  
+Label: <=50K Ratio: 0.968064
+Label: >50K Ratio: 0.031936
+Cluster 25  
+Label: <=50K Ratio: 0.916498
+Label: >50K Ratio: 0.083502
+Cluster 26  
+Label: <=50K Ratio: 0.775841
+Label: >50K Ratio: 0.224159
+Cluster 27  
+Label: <=50K Ratio: 0.985667
+Label: >50K Ratio: 0.014333
+Cluster 28  
+Label: <=50K Ratio: 0.991228
+Label: >50K Ratio: 0.008772
+Cluster 29  
+Label: <=50K Ratio: 0.849125
+Label: >50K Ratio: 0.150875
+Cluster 30  
+Label: <=50K Ratio: 0.993485
+Label: >50K Ratio: 0.006515
+Cluster 31  
+Label: >50K Ratio: 0.951719
+Label: <=50K Ratio: 0.048281
+Cluster 32  
+Label: <=50K Ratio: 0.986014
+Label: >50K Ratio: 0.013986
+Cluster 33  
+Label: <=50K Ratio: 0.996868
+Label: >50K Ratio: 0.003132
+Cluster 34  
+Label: <=50K Ratio: 0.915146
+Label: >50K Ratio: 0.084854
+Cluster 35  
+Label: <=50K Ratio: 0.962733
+Label: >50K Ratio: 0.037267
+Cluster 36  
+Label: <=50K Ratio: 0.992349
+Label: >50K Ratio: 0.007651
+Cluster 37  
+Label: <=50K Ratio: 0.988889
+Label: >50K Ratio: 0.011111
+Cluster 38  
+Label: <=50K Ratio: 0.976181
+Label: >50K Ratio: 0.023819
+Cluster 39  
+Label: <=50K Ratio: 0.900277
+Label: >50K Ratio: 0.099723
+Cluster 40  
+Label: <=50K Ratio: 0.837838
+Label: >50K Ratio: 0.162162
+Cluster 41  
+Label: <=50K Ratio: 0.970760
+Label: >50K Ratio: 0.029240
+Cluster 42  
+Label: <=50K Ratio: 0.954545
+Label: >50K Ratio: 0.045455
+Cluster 43  
+Label: <=50K Ratio: 0.860294
+Label: >50K Ratio: 0.139706
+Cluster 44  
+Label: >50K Ratio: 0.803571
+Label: <=50K Ratio: 0.196429
+Cluster 45  
+Label: <=50K Ratio: 0.941392
+Label: >50K Ratio: 0.058608
+Cluster 46  
+Label: <=50K Ratio: 0.885621
+Label: >50K Ratio: 0.114379
+Cluster 47  
+Label: <=50K Ratio: 0.968023
+Label: >50K Ratio: 0.031977
+Cluster 48  
+Label: <=50K Ratio: 0.990638
+Label: >50K Ratio: 0.009362
+Cluster 49  
+Label: <=50K Ratio: 0.977654
+Label: >50K Ratio: 0.022346
+Cluster 50  
+Label: <=50K Ratio: 0.964912
+Label: >50K Ratio: 0.035088
+Average Class Ratio
+>50K: 0.201269
+
+<=50K: 0.798731
+
+Inter-Cluster Distance: 60314.604491
+Time: 981.01s
+
+
+
+Clusters (k): 15
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 9672
+Smallest: 248
+Average: 3256
+Cluster 1  
+Label: <=50K Ratio: 0.977255
+Label: >50K Ratio: 0.022745
+Cluster 2  
+Label: <=50K Ratio: 0.994756
+Label: >50K Ratio: 0.005244
+Cluster 3  
+Label: <=50K Ratio: 0.956211
+Label: >50K Ratio: 0.043789
+Cluster 4  
+Label: <=50K Ratio: 0.940721
+Label: >50K Ratio: 0.059279
+Cluster 5  
+Label: <=50K Ratio: 0.926592
+Label: >50K Ratio: 0.073408
+Cluster 6  
+Label: <=50K Ratio: 0.954670
+Label: >50K Ratio: 0.045330
+Cluster 7  
+Label: <=50K Ratio: 0.932734
+Label: >50K Ratio: 0.067266
+Cluster 8  
+Label: >50K Ratio: 0.775242
+Label: <=50K Ratio: 0.224758
+Cluster 9  
+Label: <=50K Ratio: 0.984483
+Label: >50K Ratio: 0.015517
+Cluster 10  
+Label: <=50K Ratio: 0.934985
+Label: >50K Ratio: 0.065015
+Cluster 11  
+Label: >50K Ratio: 0.925584
+Label: <=50K Ratio: 0.074416
+Cluster 12  
+Label: >50K Ratio: 0.649194
+Label: <=50K Ratio: 0.350806
+Cluster 13  
+Label: <=50K Ratio: 0.974918
+Label: >50K Ratio: 0.025082
+Cluster 14  
+Label: >50K Ratio: 0.666396
+Label: <=50K Ratio: 0.333604
+Cluster 15  
+Label: <=50K Ratio: 0.959655
+Label: >50K Ratio: 0.040345
+Average Class Ratio
+>50K: 0.231962
+
+<=50K: 0.768038
+
+Inter-Cluster Distance: 68104.974987
+Time: 932.81s
+
+
+
+Clusters (k): 40
+
+Clusters (k): 40
+Samples: 48842
+Samples: 48842
+Class: class
+Class: class
+Cluster Sizes
+Cluster Sizes
+Largest: 49
+Largest: 49
+Smallest: 1
+Smallest: 1
+Average: 5
+Average: 5
+Cluster 1  
+Cluster 1  
+Label: <=50K Ratio: 0.956522
+Label: <=50K Ratio: 0.956522
+Label: >50K Ratio: 0.043478
+Label: >50K Ratio: 0.043478
+Cluster 2  
+Cluster 2  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 3  
+Cluster 3  
+Label: <=50K Ratio: 0.755102
+Label: <=50K Ratio: 0.755102
+Label: >50K Ratio: 0.244898
+Label: >50K Ratio: 0.244898
+Cluster 4  
+Cluster 4  
+Label: <=50K Ratio: 0.909091
+Label: <=50K Ratio: 0.909091
+Label: >50K Ratio: 0.090909
+Label: >50K Ratio: 0.090909
+Cluster 5  
+Cluster 5  
+Label: <=50K Ratio: 0.966667
+Label: <=50K Ratio: 0.966667
+Label: >50K Ratio: 0.033333
+Label: >50K Ratio: 0.033333
+Cluster 6  
+Cluster 6  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 7  
+Cluster 7  
+Label: >50K Ratio: 0.904762
+Label: >50K Ratio: 0.904762
+Label: <=50K Ratio: 0.095238
+Label: <=50K Ratio: 0.095238
+Cluster 8  
+Cluster 8  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 9  
+Cluster 9  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 10  
+Cluster 10  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 11  
+Cluster 11  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 12  
+Cluster 12  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 13  
+Cluster 13  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 14  
+Cluster 14  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 15  
+Cluster 15  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 16  
+Cluster 16  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 17  
+Cluster 17  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 18  
+Cluster 18  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 19  
+Cluster 19  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 20  
+Cluster 20  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 21  
+Cluster 21  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 22  
+Cluster 22  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 23  
+Cluster 23  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 24  
+Cluster 24  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 25  
+Cluster 25  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 26  
+Cluster 26  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 27  
+Cluster 27  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 28  
+Cluster 28  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 29  
+Cluster 29  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 30  
+Cluster 30  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 31  
+Cluster 31  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 32  
+Cluster 32  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 33  
+Cluster 33  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 34  
+Cluster 34  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 35  
+Cluster 35  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 36  
+Cluster 36  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 37  
+Cluster 37  
+Label: <=50K Ratio: 0.666667
+Label: <=50K Ratio: 0.666667
+Label: >50K Ratio: 0.333333
+Label: >50K Ratio: 0.333333
+Cluster 38  
+Cluster 38  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 39  
+Cluster 39  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 40  
+Cluster 40  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 41  
+Cluster 41  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Cluster 42  
+Cluster 42  
+Label: >50K Ratio: 1.000000
+Label: >50K Ratio: 1.000000
+Cluster 43  
+Cluster 43  
+Label: <=50K Ratio: 1.000000
+Label: <=50K Ratio: 1.000000
+Average Class Ratio
+Average Class Ratio
+>50K: 0.387226
+
+>50K: 0.387226
+
+<=50K: 0.612774
+
+<=50K: 0.612774
+
+Inter-Cluster Distance: 217.486959
+Inter-Cluster Distance: 217.486959
+Time: 1121.07s
+
+
+Time: 1121.07s
+
+
+
+Clusters (k): 100
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 3080
+Smallest: 4
+Average: 488
+Cluster 1  
+Label: <=50K Ratio: 0.996774
+Label: >50K Ratio: 0.003226
+Cluster 2  
+Label: <=50K Ratio: 0.965157
+Label: >50K Ratio: 0.034843
+Cluster 3  
+Label: >50K Ratio: 0.949121
+Label: <=50K Ratio: 0.050879
+Cluster 4  
+Label: >50K Ratio: 0.904700
+Label: <=50K Ratio: 0.095300
+Cluster 5  
+Label: <=50K Ratio: 0.949675
+Label: >50K Ratio: 0.050325
+Cluster 6  
+Label: <=50K Ratio: 0.941270
+Label: >50K Ratio: 0.058730
+Cluster 7  
+Label: <=50K Ratio: 0.899890
+Label: >50K Ratio: 0.100110
+Cluster 8  
+Label: <=50K Ratio: 0.998807
+Label: >50K Ratio: 0.001193
+Cluster 9  
+Label: >50K Ratio: 0.879245
+Label: <=50K Ratio: 0.120755
+Cluster 10  
+Label: <=50K Ratio: 0.982192
+Label: >50K Ratio: 0.017808
+Cluster 11  
+Label: >50K Ratio: 0.646489
+Label: <=50K Ratio: 0.353511
+Cluster 12  
+Label: <=50K Ratio: 1.000000
+Cluster 13  
+Label: <=50K Ratio: 0.985765
+Label: >50K Ratio: 0.014235
+Cluster 14  
+Label: <=50K Ratio: 0.997118
+Label: >50K Ratio: 0.002882
+Cluster 15  
+Label: <=50K Ratio: 0.943396
+Label: >50K Ratio: 0.056604
+Cluster 16  
+Label: <=50K Ratio: 1.000000
+Cluster 17  
+Label: <=50K Ratio: 0.976190
+Label: >50K Ratio: 0.023810
+Cluster 18  
+Label: >50K Ratio: 0.985539
+Label: <=50K Ratio: 0.014461
+Cluster 19  
+Label: <=50K Ratio: 0.902985
+Label: >50K Ratio: 0.097015
+Cluster 20  
+Label: <=50K Ratio: 0.944773
+Label: >50K Ratio: 0.055227
+Cluster 21  
+Label: <=50K Ratio: 0.946779
+Label: >50K Ratio: 0.053221
+Cluster 22  
+Label: >50K Ratio: 0.960503
+Label: <=50K Ratio: 0.039497
+Cluster 23  
+Label: >50K Ratio: 0.990099
+Label: <=50K Ratio: 0.009901
+Cluster 24  
+Label: <=50K Ratio: 0.982684
+Label: >50K Ratio: 0.017316
+Cluster 25  
+Label: <=50K Ratio: 0.990661
+Label: >50K Ratio: 0.009339
+Cluster 26  
+Label: <=50K Ratio: 0.959677
+Label: >50K Ratio: 0.040323
+Cluster 27  
+Label: <=50K Ratio: 0.916335
+Label: >50K Ratio: 0.083665
+Cluster 28  
+Label: <=50K Ratio: 0.975275
+Label: >50K Ratio: 0.024725
+Cluster 29  
+Label: <=50K Ratio: 0.939394
+Label: >50K Ratio: 0.060606
+Cluster 30  
+Label: >50K Ratio: 0.850746
+Label: <=50K Ratio: 0.149254
+Cluster 31  
+Label: <=50K Ratio: 0.926923
+Label: >50K Ratio: 0.073077
+Cluster 32  
+Label: >50K Ratio: 0.935310
+Label: <=50K Ratio: 0.064690
+Cluster 33  
+Label: <=50K Ratio: 0.975385
+Label: >50K Ratio: 0.024615
+Cluster 34  
+Label: <=50K Ratio: 0.943452
+Label: >50K Ratio: 0.056548
+Cluster 35  
+Label: <=50K Ratio: 0.921875
+Label: >50K Ratio: 0.078125
+Cluster 36  
+Label: >50K Ratio: 0.928375
+Label: <=50K Ratio: 0.071625
+Cluster 37  
+Label: <=50K Ratio: 0.954178
+Label: >50K Ratio: 0.045822
+Cluster 38  
+Label: <=50K Ratio: 0.995434
+Label: >50K Ratio: 0.004566
+Cluster 39  
+Label: <=50K Ratio: 0.997510
+Label: >50K Ratio: 0.002490
+Cluster 40  
+Label: >50K Ratio: 0.826498
+Label: <=50K Ratio: 0.173502
+Cluster 41  
+Label: <=50K Ratio: 0.940828
+Label: >50K Ratio: 0.059172
+Cluster 42  
+Label: <=50K Ratio: 0.995300
+Label: >50K Ratio: 0.004700
+Cluster 43  
+Label: <=50K Ratio: 0.978297
+Label: >50K Ratio: 0.021703
+Cluster 44  
+Label: <=50K Ratio: 0.986842
+Label: >50K Ratio: 0.013158
+Cluster 45  
+Label: <=50K Ratio: 0.924119
+Label: >50K Ratio: 0.075881
+Cluster 46  
+Label: <=50K Ratio: 0.997680
+Label: >50K Ratio: 0.002320
+Cluster 47  
+Label: >50K Ratio: 0.925926
+Label: <=50K Ratio: 0.074074
+Cluster 48  
+Label: <=50K Ratio: 0.796178
+Label: >50K Ratio: 0.203822
+Cluster 49  
+Label: <=50K Ratio: 0.946309
+Label: >50K Ratio: 0.053691
+Cluster 50  
+Label: <=50K Ratio: 0.985849
+Label: >50K Ratio: 0.014151
+Cluster 51  
+Label: <=50K Ratio: 0.952077
+Label: >50K Ratio: 0.047923
+Cluster 52  
+Label: >50K Ratio: 0.842623
+Label: <=50K Ratio: 0.157377
+Cluster 53  
+Label: <=50K Ratio: 0.912844
+Label: >50K Ratio: 0.087156
+Cluster 54  
+Label: <=50K Ratio: 0.978417
+Label: >50K Ratio: 0.021583
+Cluster 55  
+Label: <=50K Ratio: 1.000000
+Cluster 56  
+Label: <=50K Ratio: 0.973684
+Label: >50K Ratio: 0.026316
+Cluster 57  
+Label: >50K Ratio: 0.892857
+Label: <=50K Ratio: 0.107143
+Cluster 58  
+Label: <=50K Ratio: 0.995215
+Label: >50K Ratio: 0.004785
+Cluster 59  
+Label: <=50K Ratio: 0.951952
+Label: >50K Ratio: 0.048048
+Cluster 60  
+Label: <=50K Ratio: 0.854106
+Label: >50K Ratio: 0.145894
+Cluster 61  
+Label: <=50K Ratio: 0.957351
+Label: >50K Ratio: 0.042649
+Cluster 62  
+Label: <=50K Ratio: 0.965517
+Label: >50K Ratio: 0.034483
+Cluster 63  
+Label: >50K Ratio: 0.647059
+Label: <=50K Ratio: 0.352941
+Cluster 64  
+Label: <=50K Ratio: 0.935982
+Label: >50K Ratio: 0.064018
+Cluster 65  
+Label: <=50K Ratio: 0.980616
+Label: >50K Ratio: 0.019384
+Cluster 66  
+Label: <=50K Ratio: 0.965517
+Label: >50K Ratio: 0.034483
+Cluster 67  
+Label: <=50K Ratio: 0.827957
+Label: >50K Ratio: 0.172043
+Cluster 68  
+Label: <=50K Ratio: 0.951993
+Label: >50K Ratio: 0.048007
+Cluster 69  
+Label: <=50K Ratio: 0.990909
+Label: >50K Ratio: 0.009091
+Cluster 70  
+Label: >50K Ratio: 0.896296
+Label: <=50K Ratio: 0.103704
+Cluster 71  
+Label: <=50K Ratio: 0.988166
+Label: >50K Ratio: 0.011834
+Cluster 72  
+Label: <=50K Ratio: 0.925000
+Label: >50K Ratio: 0.075000
+Cluster 73  
+Label: >50K Ratio: 0.989071
+Label: <=50K Ratio: 0.010929
+Cluster 74  
+Label: <=50K Ratio: 0.725322
+Label: >50K Ratio: 0.274678
+Cluster 75  
+Label: >50K Ratio: 0.750000
+Label: <=50K Ratio: 0.250000
+Cluster 76  
+Label: <=50K Ratio: 0.969466
+Label: >50K Ratio: 0.030534
+Cluster 77  
+Label: >50K Ratio: 0.894619
+Label: <=50K Ratio: 0.105381
+Cluster 78  
+Label: >50K Ratio: 0.955117
+Label: <=50K Ratio: 0.044883
+Cluster 79  
+Label: <=50K Ratio: 1.000000
+Cluster 80  
+Label: <=50K Ratio: 0.690265
+Label: >50K Ratio: 0.309735
+Cluster 81  
+Label: >50K Ratio: 0.763158
+Label: <=50K Ratio: 0.236842
+Cluster 82  
+Label: <=50K Ratio: 0.988473
+Label: >50K Ratio: 0.011527
+Cluster 83  
+Label: <=50K Ratio: 0.976471
+Label: >50K Ratio: 0.023529
+Cluster 84  
+Label: >50K Ratio: 0.959538
+Label: <=50K Ratio: 0.040462
+Cluster 85  
+Label: <=50K Ratio: 0.993902
+Label: >50K Ratio: 0.006098
+Cluster 86  
+Label: <=50K Ratio: 0.989175
+Label: >50K Ratio: 0.010825
+Cluster 87  
+Label: <=50K Ratio: 1.000000
+Cluster 88  
+Label: <=50K Ratio: 0.954098
+Label: >50K Ratio: 0.045902
+Cluster 89  
+Label: <=50K Ratio: 0.975248
+Label: >50K Ratio: 0.024752
+Cluster 90  
+Label: <=50K Ratio: 0.937888
+Label: >50K Ratio: 0.062112
+Cluster 91  
+Label: <=50K Ratio: 0.992228
+Label: >50K Ratio: 0.007772
+Cluster 92  
+Label: <=50K Ratio: 0.996753
+Label: >50K Ratio: 0.003247
+Cluster 93  
+Label: >50K Ratio: 0.910853
+Label: <=50K Ratio: 0.089147
+Cluster 94  
+Label: <=50K Ratio: 0.775943
+Label: >50K Ratio: 0.224057
+Cluster 95  
+Label: >50K Ratio: 0.867347
+Label: <=50K Ratio: 0.132653
+Cluster 96  
+Label: <=50K Ratio: 0.946136
+Label: >50K Ratio: 0.053864
+Cluster 97  
+Label: <=50K Ratio: 0.988564
+Label: >50K Ratio: 0.011436
+Cluster 98  
+Label: <=50K Ratio: 0.957265
+Label: >50K Ratio: 0.042735
+Cluster 99  
+Label: >50K Ratio: 0.936170
+Label: <=50K Ratio: 0.063830
+Cluster 100  
+Label: <=50K Ratio: 0.915680
+Label: >50K Ratio: 0.084320
+Average Class Ratio
+>50K: 0.257461
+
+<=50K: 0.742539
+
+Inter-Cluster Distance: 54168.428957
+Time: 862.77s
+
+
+
+Clusters (k): 75
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 4458
+Smallest: 47
+Average: 651
+Cluster 1  
+Label: <=50K Ratio: 0.961451
+Label: >50K Ratio: 0.038549
+Cluster 2  
+Label: <=50K Ratio: 0.912293
+Label: >50K Ratio: 0.087707
+Cluster 3  
+Label: <=50K Ratio: 0.997059
+Label: >50K Ratio: 0.002941
+Cluster 4  
+Label: <=50K Ratio: 0.929672
+Label: >50K Ratio: 0.070328
+Cluster 5  
+Label: <=50K Ratio: 0.940260
+Label: >50K Ratio: 0.059740
+Cluster 6  
+Label: <=50K Ratio: 0.904074
+Label: >50K Ratio: 0.095926
+Cluster 7  
+Label: >50K Ratio: 0.987161
+Label: <=50K Ratio: 0.012839
+Cluster 8  
+Label: <=50K Ratio: 0.976378
+Label: >50K Ratio: 0.023622
+Cluster 9  
+Label: <=50K Ratio: 0.963834
+Label: >50K Ratio: 0.036166
+Cluster 10  
+Label: <=50K Ratio: 0.971272
+Label: >50K Ratio: 0.028728
+Cluster 11  
+Label: <=50K Ratio: 0.980769
+Label: >50K Ratio: 0.019231
+Cluster 12  
+Label: >50K Ratio: 0.933251
+Label: <=50K Ratio: 0.066749
+Cluster 13  
+Label: >50K Ratio: 0.926932
+Label: <=50K Ratio: 0.073068
+Cluster 14  
+Label: <=50K Ratio: 0.971631
+Label: >50K Ratio: 0.028369
+Cluster 15  
+Label: <=50K Ratio: 0.928854
+Label: >50K Ratio: 0.071146
+Cluster 16  
+Label: >50K Ratio: 0.936937
+Label: <=50K Ratio: 0.063063
+Cluster 17  
+Label: <=50K Ratio: 0.950931
+Label: >50K Ratio: 0.049069
+Cluster 18  
+Label: <=50K Ratio: 0.998748
+Label: >50K Ratio: 0.001252
+Cluster 19  
+Label: >50K Ratio: 0.968023
+Label: <=50K Ratio: 0.031977
+Cluster 20  
+Label: <=50K Ratio: 0.956140
+Label: >50K Ratio: 0.043860
+Cluster 21  
+Label: <=50K Ratio: 0.973545
+Label: >50K Ratio: 0.026455
+Cluster 22  
+Label: <=50K Ratio: 0.973835
+Label: >50K Ratio: 0.026165
+Cluster 23  
+Label: >50K Ratio: 0.902128
+Label: <=50K Ratio: 0.097872
+Cluster 24  
+Label: <=50K Ratio: 0.996269
+Label: >50K Ratio: 0.003731
+Cluster 25  
+Label: <=50K Ratio: 0.842650
+Label: >50K Ratio: 0.157350
+Cluster 26  
+Label: <=50K Ratio: 0.970588
+Label: >50K Ratio: 0.029412
+Cluster 27  
+Label: >50K Ratio: 0.864000
+Label: <=50K Ratio: 0.136000
+Cluster 28  
+Label: <=50K Ratio: 0.996656
+Label: >50K Ratio: 0.003344
+Cluster 29  
+Label: <=50K Ratio: 0.996753
+Label: >50K Ratio: 0.003247
+Cluster 30  
+Label: <=50K Ratio: 0.971429
+Label: >50K Ratio: 0.028571
+Cluster 31  
+Label: <=50K Ratio: 0.993544
+Label: >50K Ratio: 0.006456
+Cluster 32  
+Label: <=50K Ratio: 0.975140
+Label: >50K Ratio: 0.024860
+Cluster 33  
+Label: <=50K Ratio: 0.935015
+Label: >50K Ratio: 0.064985
+Cluster 34  
+Label: >50K Ratio: 0.935484
+Label: <=50K Ratio: 0.064516
+Cluster 35  
+Label: >50K Ratio: 0.787879
+Label: <=50K Ratio: 0.212121
+Cluster 36  
+Label: <=50K Ratio: 0.761905
+Label: >50K Ratio: 0.238095
+Cluster 37  
+Label: <=50K Ratio: 0.990909
+Label: >50K Ratio: 0.009091
+Cluster 38  
+Label: <=50K Ratio: 0.979310
+Label: >50K Ratio: 0.020690
+Cluster 39  
+Label: <=50K Ratio: 0.968944
+Label: >50K Ratio: 0.031056
+Cluster 40  
+Label: >50K Ratio: 0.965665
+Label: <=50K Ratio: 0.034335
+Cluster 41  
+Label: <=50K Ratio: 0.969171
+Label: >50K Ratio: 0.030829
+Cluster 42  
+Label: >50K Ratio: 0.754717
+Label: <=50K Ratio: 0.245283
+Cluster 43  
+Label: <=50K Ratio: 0.985612
+Label: >50K Ratio: 0.014388
+Cluster 44  
+Label: <=50K Ratio: 0.978723
+Label: >50K Ratio: 0.021277
+Cluster 45  
+Label: >50K Ratio: 0.985294
+Label: <=50K Ratio: 0.014706
+Cluster 46  
+Label: <=50K Ratio: 0.994286
+Label: >50K Ratio: 0.005714
+Cluster 47  
+Label: <=50K Ratio: 0.954651
+Label: >50K Ratio: 0.045349
+Cluster 48  
+Label: <=50K Ratio: 0.952880
+Label: >50K Ratio: 0.047120
+Cluster 49  
+Label: <=50K Ratio: 0.996785
+Label: >50K Ratio: 0.003215
+Cluster 50  
+Label: >50K Ratio: 0.698473
+Label: <=50K Ratio: 0.301527
+Cluster 51  
+Label: <=50K Ratio: 0.957371
+Label: >50K Ratio: 0.042629
+Cluster 52  
+Label: <=50K Ratio: 0.951807
+Label: >50K Ratio: 0.048193
+Cluster 53  
+Label: <=50K Ratio: 0.950943
+Label: >50K Ratio: 0.049057
+Cluster 54  
+Label: <=50K Ratio: 0.948097
+Label: >50K Ratio: 0.051903
+Cluster 55  
+Label: <=50K Ratio: 0.991379
+Label: >50K Ratio: 0.008621
+Cluster 56  
+Label: <=50K Ratio: 0.988889
+Label: >50K Ratio: 0.011111
+Cluster 57  
+Label: <=50K Ratio: 0.759470
+Label: >50K Ratio: 0.240530
+Cluster 58  
+Label: <=50K Ratio: 0.979021
+Label: >50K Ratio: 0.020979
+Cluster 59  
+Label: >50K Ratio: 0.944444
+Label: <=50K Ratio: 0.055556
+Cluster 60  
+Label: <=50K Ratio: 0.996983
+Label: >50K Ratio: 0.003017
+Cluster 61  
+Label: <=50K Ratio: 0.982759
+Label: >50K Ratio: 0.017241
+Cluster 62  
+Label: <=50K Ratio: 0.980627
+Label: >50K Ratio: 0.019373
+Cluster 63  
+Label: <=50K Ratio: 0.540625
+Label: >50K Ratio: 0.459375
+Cluster 64  
+Label: <=50K Ratio: 0.873894
+Label: >50K Ratio: 0.126106
+Cluster 65  
+Label: <=50K Ratio: 0.976744
+Label: >50K Ratio: 0.023256
+Cluster 66  
+Label: >50K Ratio: 0.842975
+Label: <=50K Ratio: 0.157025
+Cluster 67  
+Label: <=50K Ratio: 0.944724
+Label: >50K Ratio: 0.055276
+Cluster 68  
+Label: <=50K Ratio: 0.880753
+Label: >50K Ratio: 0.119247
+Cluster 69  
+Label: <=50K Ratio: 0.966774
+Label: >50K Ratio: 0.033226
+Cluster 70  
+Label: <=50K Ratio: 0.990099
+Label: >50K Ratio: 0.009901
+Cluster 71  
+Label: <=50K Ratio: 0.992366
+Label: >50K Ratio: 0.007634
+Cluster 72  
+Label: <=50K Ratio: 0.977778
+Label: >50K Ratio: 0.022222
+Cluster 73  
+Label: <=50K Ratio: 0.920455
+Label: >50K Ratio: 0.079545
+Cluster 74  
+Label: <=50K Ratio: 0.956250
+Label: >50K Ratio: 0.043750
+Cluster 75  
+Label: <=50K Ratio: 0.852349
+Label: >50K Ratio: 0.147651
+Average Class Ratio
+>50K: 0.220950
+
+<=50K: 0.779050
+
+Inter-Cluster Distance: 57540.862584
+Time: 836.50s
+
+
+
+Clusters (k): 200
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 1005
+Smallest: 14
+Average: 244
+Cluster 1  
+Label: <=50K Ratio: 0.966997
+Label: >50K Ratio: 0.033003
+Cluster 2  
+Label: <=50K Ratio: 0.976939
+Label: >50K Ratio: 0.023061
+Cluster 3  
+Label: >50K Ratio: 1.000000
+Cluster 4  
+Label: <=50K Ratio: 1.000000
+Cluster 5  
+Label: <=50K Ratio: 0.873786
+Label: >50K Ratio: 0.126214
+Cluster 6  
+Label: <=50K Ratio: 0.980263
+Label: >50K Ratio: 0.019737
+Cluster 7  
+Label: >50K Ratio: 0.922280
+Label: <=50K Ratio: 0.077720
+Cluster 8  
+Label: <=50K Ratio: 0.989011
+Label: >50K Ratio: 0.010989
+Cluster 9  
+Label: >50K Ratio: 0.810606
+Label: <=50K Ratio: 0.189394
+Cluster 10  
+Label: <=50K Ratio: 0.993031
+Label: >50K Ratio: 0.006969
+Cluster 11  
+Label: <=50K Ratio: 1.000000
+Cluster 12  
+Label: >50K Ratio: 0.895425
+Label: <=50K Ratio: 0.104575
+Cluster 13  
+Label: <=50K Ratio: 0.941463
+Label: >50K Ratio: 0.058537
+Cluster 14  
+Label: <=50K Ratio: 0.975806
+Label: >50K Ratio: 0.024194
+Cluster 15  
+Label: <=50K Ratio: 0.978022
+Label: >50K Ratio: 0.021978
+Cluster 16  
+Label: <=50K Ratio: 1.000000
+Cluster 17  
+Label: <=50K Ratio: 0.877637
+Label: >50K Ratio: 0.122363
+Cluster 18  
+Label: <=50K Ratio: 0.994455
+Label: >50K Ratio: 0.005545
+Cluster 19  
+Label: <=50K Ratio: 0.948980
+Label: >50K Ratio: 0.051020
+Cluster 20  
+Label: <=50K Ratio: 0.842730
+Label: >50K Ratio: 0.157270
+Cluster 21  
+Label: <=50K Ratio: 0.992248
+Label: >50K Ratio: 0.007752
+Cluster 22  
+Label: <=50K Ratio: 1.000000
+Cluster 23  
+Label: <=50K Ratio: 0.825243
+Label: >50K Ratio: 0.174757
+Cluster 24  
+Label: <=50K Ratio: 1.000000
+Cluster 25  
+Label: <=50K Ratio: 0.907975
+Label: >50K Ratio: 0.092025
+Cluster 26  
+Label: <=50K Ratio: 0.910112
+Label: >50K Ratio: 0.089888
+Cluster 27  
+Label: <=50K Ratio: 0.985915
+Label: >50K Ratio: 0.014085
+Cluster 28  
+Label: >50K Ratio: 0.963035
+Label: <=50K Ratio: 0.036965
+Cluster 29  
+Label: <=50K Ratio: 0.994695
+Label: >50K Ratio: 0.005305
+Cluster 30  
+Label: <=50K Ratio: 1.000000
+Cluster 31  
+Label: <=50K Ratio: 0.979167
+Label: >50K Ratio: 0.020833
+Cluster 32  
+Label: <=50K Ratio: 1.000000
+Cluster 33  
+Label: <=50K Ratio: 1.000000
+Cluster 34  
+Label: <=50K Ratio: 0.994565
+Label: >50K Ratio: 0.005435
+Cluster 35  
+Label: <=50K Ratio: 0.858974
+Label: >50K Ratio: 0.141026
+Cluster 36  
+Label: <=50K Ratio: 0.914894
+Label: >50K Ratio: 0.085106
+Cluster 37  
+Label: <=50K Ratio: 0.994286
+Label: >50K Ratio: 0.005714
+Cluster 38  
+Label: <=50K Ratio: 1.000000
+Cluster 39  
+Label: >50K Ratio: 1.000000
+Cluster 40  
+Label: <=50K Ratio: 0.990625
+Label: >50K Ratio: 0.009375
+Cluster 41  
+Label: >50K Ratio: 1.000000
+Cluster 42  
+Label: <=50K Ratio: 1.000000
+Cluster 43  
+Label: <=50K Ratio: 1.000000
+Cluster 44  
+Label: >50K Ratio: 0.926357
+Label: <=50K Ratio: 0.073643
+Cluster 45  
+Label: <=50K Ratio: 0.840708
+Label: >50K Ratio: 0.159292
+Cluster 46  
+Label: <=50K Ratio: 1.000000
+Cluster 47  
+Label: <=50K Ratio: 0.882353
+Label: >50K Ratio: 0.117647
+Cluster 48  
+Label: >50K Ratio: 1.000000
+Cluster 49  
+Label: <=50K Ratio: 0.997481
+Label: >50K Ratio: 0.002519
+Cluster 50  
+Label: <=50K Ratio: 0.954545
+Label: >50K Ratio: 0.045455
+Cluster 51  
+Label: >50K Ratio: 0.912621
+Label: <=50K Ratio: 0.087379
+Cluster 52  
+Label: <=50K Ratio: 0.974079
+Label: >50K Ratio: 0.025921
+Cluster 53  
+Label: >50K Ratio: 0.967557
+Label: <=50K Ratio: 0.032443
+Cluster 54  
+Label: <=50K Ratio: 0.962963
+Label: >50K Ratio: 0.037037
+Cluster 55  
+Label: <=50K Ratio: 0.998418
+Label: >50K Ratio: 0.001582
+Cluster 56  
+Label: <=50K Ratio: 1.000000
+Cluster 57  
+Label: <=50K Ratio: 0.875000
+Label: >50K Ratio: 0.125000
+Cluster 58  
+Label: >50K Ratio: 1.000000
+Cluster 59  
+Label: >50K Ratio: 0.983871
+Label: <=50K Ratio: 0.016129
+Cluster 60  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 61  
+Label: <=50K Ratio: 1.000000
+Cluster 62  
+Label: <=50K Ratio: 0.972851
+Label: >50K Ratio: 0.027149
+Cluster 63  
+Label: <=50K Ratio: 0.965517
+Label: >50K Ratio: 0.034483
+Cluster 64  
+Label: >50K Ratio: 0.926282
+Label: <=50K Ratio: 0.073718
+Cluster 65  
+Label: <=50K Ratio: 1.000000
+Cluster 66  
+Label: <=50K Ratio: 0.985801
+Label: >50K Ratio: 0.014199
+Cluster 67  
+Label: <=50K Ratio: 0.961194
+Label: >50K Ratio: 0.038806
+Cluster 68  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 69  
+Label: <=50K Ratio: 1.000000
+Cluster 70  
+Label: <=50K Ratio: 0.967391
+Label: >50K Ratio: 0.032609
+Cluster 71  
+Label: <=50K Ratio: 0.956685
+Label: >50K Ratio: 0.043315
+Cluster 72  
+Label: <=50K Ratio: 0.912281
+Label: >50K Ratio: 0.087719
+Cluster 73  
+Label: <=50K Ratio: 0.966495
+Label: >50K Ratio: 0.033505
+Cluster 74  
+Label: <=50K Ratio: 0.991525
+Label: >50K Ratio: 0.008475
+Cluster 75  
+Label: <=50K Ratio: 0.962162
+Label: >50K Ratio: 0.037838
+Cluster 76  
+Label: >50K Ratio: 1.000000
+Cluster 77  
+Label: >50K Ratio: 0.955056
+Label: <=50K Ratio: 0.044944
+Cluster 78  
+Label: >50K Ratio: 1.000000
+Cluster 79  
+Label: <=50K Ratio: 0.600000
+Label: >50K Ratio: 0.400000
+Cluster 80  
+Label: <=50K Ratio: 0.973510
+Label: >50K Ratio: 0.026490
+Cluster 81  
+Label: <=50K Ratio: 0.988806
+Label: >50K Ratio: 0.011194
+Cluster 82  
+Label: >50K Ratio: 0.888889
+Label: <=50K Ratio: 0.111111
+Cluster 83  
+Label: <=50K Ratio: 0.992701
+Label: >50K Ratio: 0.007299
+Cluster 84  
+Label: <=50K Ratio: 0.982759
+Label: >50K Ratio: 0.017241
+Cluster 85  
+Label: >50K Ratio: 0.994475
+Label: <=50K Ratio: 0.005525
+Cluster 86  
+Label: <=50K Ratio: 1.000000
+Cluster 87  
+Label: >50K Ratio: 0.927152
+Label: <=50K Ratio: 0.072848
+Cluster 88  
+Label: <=50K Ratio: 1.000000
+Cluster 89  
+Label: <=50K Ratio: 0.987805
+Label: >50K Ratio: 0.012195
+Cluster 90  
+Label: >50K Ratio: 0.960396
+Label: <=50K Ratio: 0.039604
+Cluster 91  
+Label: <=50K Ratio: 1.000000
+Cluster 92  
+Label: <=50K Ratio: 0.944940
+Label: >50K Ratio: 0.055060
+Cluster 93  
+Label: <=50K Ratio: 0.870334
+Label: >50K Ratio: 0.129666
+Cluster 94  
+Label: <=50K Ratio: 1.000000
+Cluster 95  
+Label: >50K Ratio: 0.892857
+Label: <=50K Ratio: 0.107143
+Cluster 96  
+Label: <=50K Ratio: 0.922330
+Label: >50K Ratio: 0.077670
+Cluster 97  
+Label: <=50K Ratio: 0.947619
+Label: >50K Ratio: 0.052381
+Cluster 98  
+Label: >50K Ratio: 0.855856
+Label: <=50K Ratio: 0.144144
+Cluster 99  
+Label: <=50K Ratio: 0.952381
+Label: >50K Ratio: 0.047619
+Cluster 100  
+Label: <=50K Ratio: 0.946309
+Label: >50K Ratio: 0.053691
+Cluster 101  
+Label: <=50K Ratio: 0.945122
+Label: >50K Ratio: 0.054878
+Cluster 102  
+Label: <=50K Ratio: 0.962209
+Label: >50K Ratio: 0.037791
+Cluster 103  
+Label: <=50K Ratio: 0.938172
+Label: >50K Ratio: 0.061828
+Cluster 104  
+Label: <=50K Ratio: 1.000000
+Cluster 105  
+Label: >50K Ratio: 1.000000
+Cluster 106  
+Label: <=50K Ratio: 0.986395
+Label: >50K Ratio: 0.013605
+Cluster 107  
+Label: <=50K Ratio: 0.990741
+Label: >50K Ratio: 0.009259
+Cluster 108  
+Label: <=50K Ratio: 0.837553
+Label: >50K Ratio: 0.162447
+Cluster 109  
+Label: >50K Ratio: 0.990826
+Label: <=50K Ratio: 0.009174
+Cluster 110  
+Label: <=50K Ratio: 0.994521
+Label: >50K Ratio: 0.005479
+Cluster 111  
+Label: <=50K Ratio: 1.000000
+Cluster 112  
+Label: <=50K Ratio: 0.977169
+Label: >50K Ratio: 0.022831
+Cluster 113  
+Label: >50K Ratio: 0.621849
+Label: <=50K Ratio: 0.378151
+Cluster 114  
+Label: <=50K Ratio: 0.923077
+Label: >50K Ratio: 0.076923
+Cluster 115  
+Label: <=50K Ratio: 0.853801
+Label: >50K Ratio: 0.146199
+Cluster 116  
+Label: <=50K Ratio: 0.994152
+Label: >50K Ratio: 0.005848
+Cluster 117  
+Label: >50K Ratio: 0.917127
+Label: <=50K Ratio: 0.082873
+Cluster 118  
+Label: <=50K Ratio: 0.988889
+Label: >50K Ratio: 0.011111
+Cluster 119  
+Label: <=50K Ratio: 0.925806
+Label: >50K Ratio: 0.074194
+Cluster 120  
+Label: <=50K Ratio: 0.922078
+Label: >50K Ratio: 0.077922
+Cluster 121  
+Label: <=50K Ratio: 0.820000
+Label: >50K Ratio: 0.180000
+Cluster 122  
+Label: <=50K Ratio: 0.995272
+Label: >50K Ratio: 0.004728
+Cluster 123  
+Label: <=50K Ratio: 0.983871
+Label: >50K Ratio: 0.016129
+Cluster 124  
+Label: <=50K Ratio: 0.995192
+Label: >50K Ratio: 0.004808
+Cluster 125  
+Label: <=50K Ratio: 0.971047
+Label: >50K Ratio: 0.028953
+Cluster 126  
+Label: <=50K Ratio: 0.919336
+Label: >50K Ratio: 0.080664
+Cluster 127  
+Label: <=50K Ratio: 1.000000
+Cluster 128  
+Label: <=50K Ratio: 0.991071
+Label: >50K Ratio: 0.008929
+Cluster 129  
+Label: <=50K Ratio: 0.926641
+Label: >50K Ratio: 0.073359
+Cluster 130  
+Label: <=50K Ratio: 0.971154
+Label: >50K Ratio: 0.028846
+Cluster 131  
+Label: <=50K Ratio: 0.952790
+Label: >50K Ratio: 0.047210
+Cluster 132  
+Label: <=50K Ratio: 1.000000
+Cluster 133  
+Label: >50K Ratio: 0.821918
+Label: <=50K Ratio: 0.178082
+Cluster 134  
+Label: <=50K Ratio: 0.977891
+Label: >50K Ratio: 0.022109
+Cluster 135  
+Label: <=50K Ratio: 0.908163
+Label: >50K Ratio: 0.091837
+Cluster 136  
+Label: <=50K Ratio: 0.993789
+Label: >50K Ratio: 0.006211
+Cluster 137  
+Label: <=50K Ratio: 0.952514
+Label: >50K Ratio: 0.047486
+Cluster 138  
+Label: <=50K Ratio: 0.975970
+Label: >50K Ratio: 0.024030
+Cluster 139  
+Label: <=50K Ratio: 0.988550
+Label: >50K Ratio: 0.011450
+Cluster 140  
+Label: <=50K Ratio: 0.969925
+Label: >50K Ratio: 0.030075
+Cluster 141  
+Label: <=50K Ratio: 0.987179
+Label: >50K Ratio: 0.012821
+Cluster 142  
+Label: >50K Ratio: 0.993151
+Label: <=50K Ratio: 0.006849
+Cluster 143  
+Label: <=50K Ratio: 0.950311
+Label: >50K Ratio: 0.049689
+Cluster 144  
+Label: <=50K Ratio: 0.960000
+Label: >50K Ratio: 0.040000
+Cluster 145  
+Label: >50K Ratio: 1.000000
+Cluster 146  
+Label: <=50K Ratio: 0.971429
+Label: >50K Ratio: 0.028571
+Cluster 147  
+Label: <=50K Ratio: 0.914692
+Label: >50K Ratio: 0.085308
+Cluster 148  
+Label: <=50K Ratio: 0.989011
+Label: >50K Ratio: 0.010989
+Cluster 149  
+Label: <=50K Ratio: 1.000000
+Cluster 150  
+Label: >50K Ratio: 0.887550
+Label: <=50K Ratio: 0.112450
+Cluster 151  
+Label: <=50K Ratio: 0.991935
+Label: >50K Ratio: 0.008065
+Cluster 152  
+Label: <=50K Ratio: 0.980198
+Label: >50K Ratio: 0.019802
+Cluster 153  
+Label: <=50K Ratio: 0.928910
+Label: >50K Ratio: 0.071090
+Cluster 154  
+Label: >50K Ratio: 0.913333
+Label: <=50K Ratio: 0.086667
+Cluster 155  
+Label: <=50K Ratio: 1.000000
+Cluster 156  
+Label: <=50K Ratio: 0.978378
+Label: >50K Ratio: 0.021622
+Cluster 157  
+Label: <=50K Ratio: 0.987421
+Label: >50K Ratio: 0.012579
+Cluster 158  
+Label: <=50K Ratio: 0.958333
+Label: >50K Ratio: 0.041667
+Cluster 159  
+Label: >50K Ratio: 0.964286
+Label: <=50K Ratio: 0.035714
+Cluster 160  
+Label: <=50K Ratio: 0.993377
+Label: >50K Ratio: 0.006623
+Cluster 161  
+Label: >50K Ratio: 1.000000
+Cluster 162  
+Label: <=50K Ratio: 0.971831
+Label: >50K Ratio: 0.028169
+Cluster 163  
+Label: <=50K Ratio: 0.983871
+Label: >50K Ratio: 0.016129
+Cluster 164  
+Label: <=50K Ratio: 0.990000
+Label: >50K Ratio: 0.010000
+Cluster 165  
+Label: <=50K Ratio: 0.906780
+Label: >50K Ratio: 0.093220
+Cluster 166  
+Label: <=50K Ratio: 1.000000
+Cluster 167  
+Label: >50K Ratio: 0.880952
+Label: <=50K Ratio: 0.119048
+Cluster 168  
+Label: >50K Ratio: 0.929293
+Label: <=50K Ratio: 0.070707
+Cluster 169  
+Label: <=50K Ratio: 0.941860
+Label: >50K Ratio: 0.058140
+Cluster 170  
+Label: >50K Ratio: 0.884615
+Label: <=50K Ratio: 0.115385
+Cluster 171  
+Label: <=50K Ratio: 0.988930
+Label: >50K Ratio: 0.011070
+Cluster 172  
+Label: <=50K Ratio: 0.963470
+Label: >50K Ratio: 0.036530
+Cluster 173  
+Label: <=50K Ratio: 0.962963
+Label: >50K Ratio: 0.037037
+Cluster 174  
+Label: <=50K Ratio: 0.993976
+Label: >50K Ratio: 0.006024
+Cluster 175  
+Label: <=50K Ratio: 0.994118
+Label: >50K Ratio: 0.005882
+Cluster 176  
+Label: <=50K Ratio: 0.948571
+Label: >50K Ratio: 0.051429
+Cluster 177  
+Label: <=50K Ratio: 1.000000
+Cluster 178  
+Label: >50K Ratio: 0.927007
+Label: <=50K Ratio: 0.072993
+Cluster 179  
+Label: <=50K Ratio: 0.994253
+Label: >50K Ratio: 0.005747
+Cluster 180  
+Label: <=50K Ratio: 0.910714
+Label: >50K Ratio: 0.089286
+Cluster 181  
+Label: <=50K Ratio: 0.997110
+Label: >50K Ratio: 0.002890
+Cluster 182  
+Label: <=50K Ratio: 1.000000
+Cluster 183  
+Label: >50K Ratio: 0.949324
+Label: <=50K Ratio: 0.050676
+Cluster 184  
+Label: <=50K Ratio: 0.925926
+Label: >50K Ratio: 0.074074
+Cluster 185  
+Label: <=50K Ratio: 0.990415
+Label: >50K Ratio: 0.009585
+Cluster 186  
+Label: <=50K Ratio: 0.954751
+Label: >50K Ratio: 0.045249
+Cluster 187  
+Label: <=50K Ratio: 0.986207
+Label: >50K Ratio: 0.013793
+Cluster 188  
+Label: <=50K Ratio: 1.000000
+Cluster 189  
+Label: >50K Ratio: 0.914530
+Label: <=50K Ratio: 0.085470
+Cluster 190  
+Label: >50K Ratio: 0.994949
+Label: <=50K Ratio: 0.005051
+Cluster 191  
+Label: >50K Ratio: 0.889831
+Label: <=50K Ratio: 0.110169
+Cluster 192  
+Label: <=50K Ratio: 0.959184
+Label: >50K Ratio: 0.040816
+Cluster 193  
+Label: <=50K Ratio: 0.987805
+Label: >50K Ratio: 0.012195
+Cluster 194  
+Label: <=50K Ratio: 0.897959
+Label: >50K Ratio: 0.102041
+Cluster 195  
+Label: <=50K Ratio: 0.974194
+Label: >50K Ratio: 0.025806
+Cluster 196  
+Label: >50K Ratio: 0.902542
+Label: <=50K Ratio: 0.097458
+Cluster 197  
+Label: <=50K Ratio: 0.956897
+Label: >50K Ratio: 0.043103
+Cluster 198  
+Label: <=50K Ratio: 0.953368
+Label: >50K Ratio: 0.046632
+Cluster 199  
+Label: <=50K Ratio: 0.991667
+Label: >50K Ratio: 0.008333
+Cluster 200  
+Label: >50K Ratio: 0.859729
+Label: <=50K Ratio: 0.140271
+Average Class Ratio
+>50K: 0.234385
+
+<=50K: 0.765615
+
+Inter-Cluster Distance: 45777.329655
+Time: 994.62s
+
+
+
+Clusters (k): 200
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 1034
+Smallest: 15
+Average: 244
+Cluster 1  
+Label: <=50K Ratio: 1.000000
+Cluster 2  
+Label: <=50K Ratio: 0.903614
+Label: >50K Ratio: 0.096386
+Cluster 3  
+Label: <=50K Ratio: 0.980000
+Label: >50K Ratio: 0.020000
+Cluster 4  
+Label: <=50K Ratio: 0.986667
+Label: >50K Ratio: 0.013333
+Cluster 5  
+Label: >50K Ratio: 0.984127
+Label: <=50K Ratio: 0.015873
+Cluster 6  
+Label: <=50K Ratio: 0.923423
+Label: >50K Ratio: 0.076577
+Cluster 7  
+Label: <=50K Ratio: 0.820513
+Label: >50K Ratio: 0.179487
+Cluster 8  
+Label: <=50K Ratio: 0.956250
+Label: >50K Ratio: 0.043750
+Cluster 9  
+Label: <=50K Ratio: 1.000000
+Cluster 10  
+Label: <=50K Ratio: 0.978788
+Label: >50K Ratio: 0.021212
+Cluster 11  
+Label: >50K Ratio: 1.000000
+Cluster 12  
+Label: <=50K Ratio: 0.982301
+Label: >50K Ratio: 0.017699
+Cluster 13  
+Label: <=50K Ratio: 0.995238
+Label: >50K Ratio: 0.004762
+Cluster 14  
+Label: <=50K Ratio: 0.971429
+Label: >50K Ratio: 0.028571
+Cluster 15  
+Label: <=50K Ratio: 0.900000
+Label: >50K Ratio: 0.100000
+Cluster 16  
+Label: >50K Ratio: 0.903704
+Label: <=50K Ratio: 0.096296
+Cluster 17  
+Label: <=50K Ratio: 0.991471
+Label: >50K Ratio: 0.008529
+Cluster 18  
+Label: <=50K Ratio: 1.000000
+Cluster 19  
+Label: >50K Ratio: 0.857143
+Label: <=50K Ratio: 0.142857
+Cluster 20  
+Label: >50K Ratio: 0.998148
+Label: <=50K Ratio: 0.001852
+Cluster 21  
+Label: <=50K Ratio: 0.851282
+Label: >50K Ratio: 0.148718
+Cluster 22  
+Label: <=50K Ratio: 0.965714
+Label: >50K Ratio: 0.034286
+Cluster 23  
+Label: <=50K Ratio: 1.000000
+Cluster 24  
+Label: <=50K Ratio: 1.000000
+Cluster 25  
+Label: <=50K Ratio: 0.993188
+Label: >50K Ratio: 0.006812
+Cluster 26  
+Label: <=50K Ratio: 0.944785
+Label: >50K Ratio: 0.055215
+Cluster 27  
+Label: <=50K Ratio: 0.948454
+Label: >50K Ratio: 0.051546
+Cluster 28  
+Label: <=50K Ratio: 0.958678
+Label: >50K Ratio: 0.041322
+Cluster 29  
+Label: >50K Ratio: 0.936047
+Label: <=50K Ratio: 0.063953
+Cluster 30  
+Label: <=50K Ratio: 0.976445
+Label: >50K Ratio: 0.023555
+Cluster 31  
+Label: <=50K Ratio: 1.000000
+Cluster 32  
+Label: >50K Ratio: 0.985577
+Label: <=50K Ratio: 0.014423
+Cluster 33  
+Label: <=50K Ratio: 0.992806
+Label: >50K Ratio: 0.007194
+Cluster 34  
+Label: <=50K Ratio: 1.000000
+Cluster 35  
+Label: <=50K Ratio: 0.945860
+Label: >50K Ratio: 0.054140
+Cluster 36  
+Label: <=50K Ratio: 0.980695
+Label: >50K Ratio: 0.019305
+Cluster 37  
+Label: <=50K Ratio: 0.978947
+Label: >50K Ratio: 0.021053
+Cluster 38  
+Label: <=50K Ratio: 0.984848
+Label: >50K Ratio: 0.015152
+Cluster 39  
+Label: <=50K Ratio: 0.860294
+Label: >50K Ratio: 0.139706
+Cluster 40  
+Label: <=50K Ratio: 0.995833
+Label: >50K Ratio: 0.004167
+Cluster 41  
+Label: <=50K Ratio: 0.997487
+Label: >50K Ratio: 0.002513
+Cluster 42  
+Label: >50K Ratio: 0.949749
+Label: <=50K Ratio: 0.050251
+Cluster 43  
+Label: <=50K Ratio: 0.972678
+Label: >50K Ratio: 0.027322
+Cluster 44  
+Label: <=50K Ratio: 0.860465
+Label: >50K Ratio: 0.139535
+Cluster 45  
+Label: <=50K Ratio: 0.954545
+Label: >50K Ratio: 0.045455
+Cluster 46  
+Label: <=50K Ratio: 0.979522
+Label: >50K Ratio: 0.020478
+Cluster 47  
+Label: <=50K Ratio: 0.996825
+Label: >50K Ratio: 0.003175
+Cluster 48  
+Label: >50K Ratio: 0.795775
+Label: <=50K Ratio: 0.204225
+Cluster 49  
+Label: <=50K Ratio: 0.934211
+Label: >50K Ratio: 0.065789
+Cluster 50  
+Label: >50K Ratio: 0.965318
+Label: <=50K Ratio: 0.034682
+Cluster 51  
+Label: >50K Ratio: 1.000000
+Cluster 52  
+Label: <=50K Ratio: 0.658065
+Label: >50K Ratio: 0.341935
+Cluster 53  
+Label: <=50K Ratio: 0.835443
+Label: >50K Ratio: 0.164557
+Cluster 54  
+Label: <=50K Ratio: 0.960954
+Label: >50K Ratio: 0.039046
+Cluster 55  
+Label: <=50K Ratio: 1.000000
+Cluster 56  
+Label: >50K Ratio: 0.895735
+Label: <=50K Ratio: 0.104265
+Cluster 57  
+Label: <=50K Ratio: 0.979798
+Label: >50K Ratio: 0.020202
+Cluster 58  
+Label: <=50K Ratio: 0.979021
+Label: >50K Ratio: 0.020979
+Cluster 59  
+Label: <=50K Ratio: 1.000000
+Cluster 60  
+Label: >50K Ratio: 0.840000
+Label: <=50K Ratio: 0.160000
+Cluster 61  
+Label: <=50K Ratio: 0.952880
+Label: >50K Ratio: 0.047120
+Cluster 62  
+Label: <=50K Ratio: 1.000000
+Cluster 63  
+Label: >50K Ratio: 1.000000
+Cluster 64  
+Label: <=50K Ratio: 0.977011
+Label: >50K Ratio: 0.022989
+Cluster 65  
+Label: <=50K Ratio: 0.957983
+Label: >50K Ratio: 0.042017
+Cluster 66  
+Label: >50K Ratio: 1.000000
+Cluster 67  
+Label: <=50K Ratio: 0.981132
+Label: >50K Ratio: 0.018868
+Cluster 68  
+Label: <=50K Ratio: 1.000000
+Cluster 69  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 70  
+Label: <=50K Ratio: 0.993902
+Label: >50K Ratio: 0.006098
+Cluster 71  
+Label: <=50K Ratio: 0.938628
+Label: >50K Ratio: 0.061372
+Cluster 72  
+Label: >50K Ratio: 0.971930
+Label: <=50K Ratio: 0.028070
+Cluster 73  
+Label: >50K Ratio: 0.965517
+Label: <=50K Ratio: 0.034483
+Cluster 74  
+Label: <=50K Ratio: 0.958333
+Label: >50K Ratio: 0.041667
+Cluster 75  
+Label: <=50K Ratio: 0.936306
+Label: >50K Ratio: 0.063694
+Cluster 76  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 77  
+Label: >50K Ratio: 0.789474
+Label: <=50K Ratio: 0.210526
+Cluster 78  
+Label: <=50K Ratio: 0.886598
+Label: >50K Ratio: 0.113402
+Cluster 79  
+Label: >50K Ratio: 0.907692
+Label: <=50K Ratio: 0.092308
+Cluster 80  
+Label: <=50K Ratio: 0.968912
+Label: >50K Ratio: 0.031088
+Cluster 81  
+Label: <=50K Ratio: 0.989071
+Label: >50K Ratio: 0.010929
+Cluster 82  
+Label: <=50K Ratio: 0.941304
+Label: >50K Ratio: 0.058696
+Cluster 83  
+Label: <=50K Ratio: 1.000000
+Cluster 84  
+Label: <=50K Ratio: 0.930233
+Label: >50K Ratio: 0.069767
+Cluster 85  
+Label: <=50K Ratio: 1.000000
+Cluster 86  
+Label: <=50K Ratio: 1.000000
+Cluster 87  
+Label: <=50K Ratio: 0.981395
+Label: >50K Ratio: 0.018605
+Cluster 88  
+Label: <=50K Ratio: 0.998553
+Label: >50K Ratio: 0.001447
+Cluster 89  
+Label: >50K Ratio: 1.000000
+Cluster 90  
+Label: <=50K Ratio: 0.928105
+Label: >50K Ratio: 0.071895
+Cluster 91  
+Label: <=50K Ratio: 1.000000
+Cluster 92  
+Label: <=50K Ratio: 0.988728
+Label: >50K Ratio: 0.011272
+Cluster 93  
+Label: <=50K Ratio: 0.996219
+Label: >50K Ratio: 0.003781
+Cluster 94  
+Label: <=50K Ratio: 0.968750
+Label: >50K Ratio: 0.031250
+Cluster 95  
+Label: >50K Ratio: 0.925926
+Label: <=50K Ratio: 0.074074
+Cluster 96  
+Label: <=50K Ratio: 0.986254
+Label: >50K Ratio: 0.013746
+Cluster 97  
+Label: <=50K Ratio: 0.859259
+Label: >50K Ratio: 0.140741
+Cluster 98  
+Label: <=50K Ratio: 1.000000
+Cluster 99  
+Label: <=50K Ratio: 0.967033
+Label: >50K Ratio: 0.032967
+Cluster 100  
+Label: <=50K Ratio: 1.000000
+Cluster 101  
+Label: >50K Ratio: 0.890625
+Label: <=50K Ratio: 0.109375
+Cluster 102  
+Label: <=50K Ratio: 0.973333
+Label: >50K Ratio: 0.026667
+Cluster 103  
+Label: <=50K Ratio: 0.987578
+Label: >50K Ratio: 0.012422
+Cluster 104  
+Label: <=50K Ratio: 0.930435
+Label: >50K Ratio: 0.069565
+Cluster 105  
+Label: >50K Ratio: 1.000000
+Cluster 106  
+Label: <=50K Ratio: 0.921824
+Label: >50K Ratio: 0.078176
+Cluster 107  
+Label: <=50K Ratio: 0.991770
+Label: >50K Ratio: 0.008230
+Cluster 108  
+Label: >50K Ratio: 1.000000
+Cluster 109  
+Label: <=50K Ratio: 0.943503
+Label: >50K Ratio: 0.056497
+Cluster 110  
+Label: <=50K Ratio: 0.992278
+Label: >50K Ratio: 0.007722
+Cluster 111  
+Label: >50K Ratio: 1.000000
+Cluster 112  
+Label: <=50K Ratio: 0.991071
+Label: >50K Ratio: 0.008929
+Cluster 113  
+Label: <=50K Ratio: 1.000000
+Cluster 114  
+Label: >50K Ratio: 1.000000
+Cluster 115  
+Label: <=50K Ratio: 1.000000
+Cluster 116  
+Label: >50K Ratio: 1.000000
+Cluster 117  
+Label: >50K Ratio: 0.961538
+Label: <=50K Ratio: 0.038462
+Cluster 118  
+Label: <=50K Ratio: 0.878049
+Label: >50K Ratio: 0.121951
+Cluster 119  
+Label: <=50K Ratio: 1.000000
+Cluster 120  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 121  
+Label: <=50K Ratio: 0.989130
+Label: >50K Ratio: 0.010870
+Cluster 122  
+Label: <=50K Ratio: 0.979695
+Label: >50K Ratio: 0.020305
+Cluster 123  
+Label: <=50K Ratio: 0.808219
+Label: >50K Ratio: 0.191781
+Cluster 124  
+Label: <=50K Ratio: 0.996534
+Label: >50K Ratio: 0.003466
+Cluster 125  
+Label: >50K Ratio: 0.886957
+Label: <=50K Ratio: 0.113043
+Cluster 126  
+Label: <=50K Ratio: 0.962500
+Label: >50K Ratio: 0.037500
+Cluster 127  
+Label: <=50K Ratio: 0.990909
+Label: >50K Ratio: 0.009091
+Cluster 128  
+Label: >50K Ratio: 0.997106
+Label: <=50K Ratio: 0.002894
+Cluster 129  
+Label: <=50K Ratio: 0.986842
+Label: >50K Ratio: 0.013158
+Cluster 130  
+Label: <=50K Ratio: 0.987854
+Label: >50K Ratio: 0.012146
+Cluster 131  
+Label: <=50K Ratio: 0.954861
+Label: >50K Ratio: 0.045139
+Cluster 132  
+Label: >50K Ratio: 0.935961
+Label: <=50K Ratio: 0.064039
+Cluster 133  
+Label: >50K Ratio: 0.938650
+Label: <=50K Ratio: 0.061350
+Cluster 134  
+Label: <=50K Ratio: 1.000000
+Cluster 135  
+Label: <=50K Ratio: 0.960000
+Label: >50K Ratio: 0.040000
+Cluster 136  
+Label: <=50K Ratio: 0.996390
+Label: >50K Ratio: 0.003610
+Cluster 137  
+Label: <=50K Ratio: 0.987500
+Label: >50K Ratio: 0.012500
+Cluster 138  
+Label: >50K Ratio: 0.841912
+Label: <=50K Ratio: 0.158088
+Cluster 139  
+Label: <=50K Ratio: 0.766667
+Label: >50K Ratio: 0.233333
+Cluster 140  
+Label: <=50K Ratio: 0.973597
+Label: >50K Ratio: 0.026403
+Cluster 141  
+Label: >50K Ratio: 0.989691
+Label: <=50K Ratio: 0.010309
+Cluster 142  
+Label: >50K Ratio: 0.758427
+Label: <=50K Ratio: 0.241573
+Cluster 143  
+Label: >50K Ratio: 0.960526
+Label: <=50K Ratio: 0.039474
+Cluster 144  
+Label: <=50K Ratio: 1.000000
+Cluster 145  
+Label: <=50K Ratio: 0.998084
+Label: >50K Ratio: 0.001916
+Cluster 146  
+Label: <=50K Ratio: 0.993976
+Label: >50K Ratio: 0.006024
+Cluster 147  
+Label: <=50K Ratio: 0.965517
+Label: >50K Ratio: 0.034483
+Cluster 148  
+Label: <=50K Ratio: 0.992593
+Label: >50K Ratio: 0.007407
+Cluster 149  
+Label: <=50K Ratio: 0.943396
+Label: >50K Ratio: 0.056604
+Cluster 150  
+Label: <=50K Ratio: 0.965517
+Label: >50K Ratio: 0.034483
+Cluster 151  
+Label: >50K Ratio: 1.000000
+Cluster 152  
+Label: <=50K Ratio: 0.961003
+Label: >50K Ratio: 0.038997
+Cluster 153  
+Label: <=50K Ratio: 0.996774
+Label: >50K Ratio: 0.003226
+Cluster 154  
+Label: <=50K Ratio: 0.956757
+Label: >50K Ratio: 0.043243
+Cluster 155  
+Label: <=50K Ratio: 0.938272
+Label: >50K Ratio: 0.061728
+Cluster 156  
+Label: >50K Ratio: 1.000000
+Cluster 157  
+Label: <=50K Ratio: 0.984615
+Label: >50K Ratio: 0.015385
+Cluster 158  
+Label: <=50K Ratio: 0.963788
+Label: >50K Ratio: 0.036212
+Cluster 159  
+Label: <=50K Ratio: 0.984127
+Label: >50K Ratio: 0.015873
+Cluster 160  
+Label: <=50K Ratio: 0.973799
+Label: >50K Ratio: 0.026201
+Cluster 161  
+Label: <=50K Ratio: 0.827411
+Label: >50K Ratio: 0.172589
+Cluster 162  
+Label: <=50K Ratio: 1.000000
+Cluster 163  
+Label: <=50K Ratio: 0.859060
+Label: >50K Ratio: 0.140940
+Cluster 164  
+Label: <=50K Ratio: 0.992188
+Label: >50K Ratio: 0.007812
+Cluster 165  
+Label: <=50K Ratio: 0.955752
+Label: >50K Ratio: 0.044248
+Cluster 166  
+Label: <=50K Ratio: 0.891089
+Label: >50K Ratio: 0.108911
+Cluster 167  
+Label: <=50K Ratio: 0.984293
+Label: >50K Ratio: 0.015707
+Cluster 168  
+Label: <=50K Ratio: 0.993043
+Label: >50K Ratio: 0.006957
+Cluster 169  
+Label: <=50K Ratio: 0.994792
+Label: >50K Ratio: 0.005208
+Cluster 170  
+Label: <=50K Ratio: 0.980519
+Label: >50K Ratio: 0.019481
+Cluster 171  
+Label: <=50K Ratio: 0.984252
+Label: >50K Ratio: 0.015748
+Cluster 172  
+Label: >50K Ratio: 0.946429
+Label: <=50K Ratio: 0.053571
+Cluster 173  
+Label: >50K Ratio: 0.848485
+Label: <=50K Ratio: 0.151515
+Cluster 174  
+Label: <=50K Ratio: 0.937799
+Label: >50K Ratio: 0.062201
+Cluster 175  
+Label: <=50K Ratio: 0.967105
+Label: >50K Ratio: 0.032895
+Cluster 176  
+Label: <=50K Ratio: 0.952830
+Label: >50K Ratio: 0.047170
+Cluster 177  
+Label: <=50K Ratio: 0.976923
+Label: >50K Ratio: 0.023077
+Cluster 178  
+Label: <=50K Ratio: 0.906977
+Label: >50K Ratio: 0.093023
+Cluster 179  
+Label: >50K Ratio: 1.000000
+Cluster 180  
+Label: <=50K Ratio: 0.954039
+Label: >50K Ratio: 0.045961
+Cluster 181  
+Label: <=50K Ratio: 1.000000
+Cluster 182  
+Label: <=50K Ratio: 0.967742
+Label: >50K Ratio: 0.032258
+Cluster 183  
+Label: >50K Ratio: 1.000000
+Cluster 184  
+Label: <=50K Ratio: 1.000000
+Cluster 185  
+Label: <=50K Ratio: 1.000000
+Cluster 186  
+Label: >50K Ratio: 1.000000
+Cluster 187  
+Label: <=50K Ratio: 0.961832
+Label: >50K Ratio: 0.038168
+Cluster 188  
+Label: <=50K Ratio: 0.988732
+Label: >50K Ratio: 0.011268
+Cluster 189  
+Label: <=50K Ratio: 0.877907
+Label: >50K Ratio: 0.122093
+Cluster 190  
+Label: <=50K Ratio: 0.875000
+Label: >50K Ratio: 0.125000
+Cluster 191  
+Label: <=50K Ratio: 0.949153
+Label: >50K Ratio: 0.050847
+Cluster 192  
+Label: >50K Ratio: 0.967427
+Label: <=50K Ratio: 0.032573
+Cluster 193  
+Label: >50K Ratio: 0.949602
+Label: <=50K Ratio: 0.050398
+Cluster 194  
+Label: <=50K Ratio: 0.981818
+Label: >50K Ratio: 0.018182
+Cluster 195  
+Label: <=50K Ratio: 0.948598
+Label: >50K Ratio: 0.051402
+Cluster 196  
+Label: >50K Ratio: 0.886076
+Label: <=50K Ratio: 0.113924
+Cluster 197  
+Label: <=50K Ratio: 0.983278
+Label: >50K Ratio: 0.016722
+Cluster 198  
+Label: <=50K Ratio: 1.000000
+Cluster 199  
+Label: >50K Ratio: 0.910280
+Label: <=50K Ratio: 0.089720
+Cluster 200  
+Label: <=50K Ratio: 0.991071
+Label: >50K Ratio: 0.008929
+Average Class Ratio
+>50K: 0.250835
+
+<=50K: 0.749165
+
+Inter-Cluster Distance: 46017.994523
+Time: 1244.26s
+
+
+
+Clusters (k): 150
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 1443
+Smallest: 10
+Average: 326
+Cluster 1  
+Label: <=50K Ratio: 0.997487
+Label: >50K Ratio: 0.002513
+Cluster 2  
+Label: <=50K Ratio: 0.997792
+Label: >50K Ratio: 0.002208
+Cluster 3  
+Label: <=50K Ratio: 0.957655
+Label: >50K Ratio: 0.042345
+Cluster 4  
+Label: >50K Ratio: 0.978632
+Label: <=50K Ratio: 0.021368
+Cluster 5  
+Label: <=50K Ratio: 0.980050
+Label: >50K Ratio: 0.019950
+Cluster 6  
+Label: <=50K Ratio: 0.962291
+Label: >50K Ratio: 0.037709
+Cluster 7  
+Label: >50K Ratio: 1.000000
+Cluster 8  
+Label: <=50K Ratio: 0.942105
+Label: >50K Ratio: 0.057895
+Cluster 9  
+Label: <=50K Ratio: 0.968182
+Label: >50K Ratio: 0.031818
+Cluster 10  
+Label: <=50K Ratio: 0.919118
+Label: >50K Ratio: 0.080882
+Cluster 11  
+Label: <=50K Ratio: 0.999307
+Label: >50K Ratio: 0.000693
+Cluster 12  
+Label: <=50K Ratio: 0.986486
+Label: >50K Ratio: 0.013514
+Cluster 13  
+Label: <=50K Ratio: 0.987374
+Label: >50K Ratio: 0.012626
+Cluster 14  
+Label: <=50K Ratio: 0.982456
+Label: >50K Ratio: 0.017544
+Cluster 15  
+Label: >50K Ratio: 0.981308
+Label: <=50K Ratio: 0.018692
+Cluster 16  
+Label: >50K Ratio: 0.971487
+Label: <=50K Ratio: 0.028513
+Cluster 17  
+Label: >50K Ratio: 0.979310
+Label: <=50K Ratio: 0.020690
+Cluster 18  
+Label: <=50K Ratio: 0.997368
+Label: >50K Ratio: 0.002632
+Cluster 19  
+Label: <=50K Ratio: 0.767045
+Label: >50K Ratio: 0.232955
+Cluster 20  
+Label: <=50K Ratio: 0.993603
+Label: >50K Ratio: 0.006397
+Cluster 21  
+Label: <=50K Ratio: 0.935849
+Label: >50K Ratio: 0.064151
+Cluster 22  
+Label: <=50K Ratio: 0.883817
+Label: >50K Ratio: 0.116183
+Cluster 23  
+Label: >50K Ratio: 0.946809
+Label: <=50K Ratio: 0.053191
+Cluster 24  
+Label: <=50K Ratio: 0.982544
+Label: >50K Ratio: 0.017456
+Cluster 25  
+Label: <=50K Ratio: 0.931217
+Label: >50K Ratio: 0.068783
+Cluster 26  
+Label: <=50K Ratio: 0.949875
+Label: >50K Ratio: 0.050125
+Cluster 27  
+Label: >50K Ratio: 0.941176
+Label: <=50K Ratio: 0.058824
+Cluster 28  
+Label: <=50K Ratio: 0.985915
+Label: >50K Ratio: 0.014085
+Cluster 29  
+Label: <=50K Ratio: 0.995169
+Label: >50K Ratio: 0.004831
+Cluster 30  
+Label: <=50K Ratio: 0.883041
+Label: >50K Ratio: 0.116959
+Cluster 31  
+Label: <=50K Ratio: 0.989104
+Label: >50K Ratio: 0.010896
+Cluster 32  
+Label: >50K Ratio: 0.922559
+Label: <=50K Ratio: 0.077441
+Cluster 33  
+Label: >50K Ratio: 0.700000
+Label: <=50K Ratio: 0.300000
+Cluster 34  
+Label: <=50K Ratio: 0.894737
+Label: >50K Ratio: 0.105263
+Cluster 35  
+Label: <=50K Ratio: 0.902439
+Label: >50K Ratio: 0.097561
+Cluster 36  
+Label: >50K Ratio: 1.000000
+Cluster 37  
+Label: <=50K Ratio: 0.970443
+Label: >50K Ratio: 0.029557
+Cluster 38  
+Label: <=50K Ratio: 0.992126
+Label: >50K Ratio: 0.007874
+Cluster 39  
+Label: <=50K Ratio: 0.931442
+Label: >50K Ratio: 0.068558
+Cluster 40  
+Label: <=50K Ratio: 0.936364
+Label: >50K Ratio: 0.063636
+Cluster 41  
+Label: >50K Ratio: 0.938967
+Label: <=50K Ratio: 0.061033
+Cluster 42  
+Label: <=50K Ratio: 0.956072
+Label: >50K Ratio: 0.043928
+Cluster 43  
+Label: <=50K Ratio: 0.912458
+Label: >50K Ratio: 0.087542
+Cluster 44  
+Label: >50K Ratio: 0.861538
+Label: <=50K Ratio: 0.138462
+Cluster 45  
+Label: <=50K Ratio: 0.995413
+Label: >50K Ratio: 0.004587
+Cluster 46  
+Label: <=50K Ratio: 0.955975
+Label: >50K Ratio: 0.044025
+Cluster 47  
+Label: <=50K Ratio: 0.989101
+Label: >50K Ratio: 0.010899
+Cluster 48  
+Label: <=50K Ratio: 0.953020
+Label: >50K Ratio: 0.046980
+Cluster 49  
+Label: <=50K Ratio: 0.999273
+Label: >50K Ratio: 0.000727
+Cluster 50  
+Label: <=50K Ratio: 0.985612
+Label: >50K Ratio: 0.014388
+Cluster 51  
+Label: <=50K Ratio: 0.982456
+Label: >50K Ratio: 0.017544
+Cluster 52  
+Label: <=50K Ratio: 0.971698
+Label: >50K Ratio: 0.028302
+Cluster 53  
+Label: <=50K Ratio: 0.955882
+Label: >50K Ratio: 0.044118
+Cluster 54  
+Label: <=50K Ratio: 0.896341
+Label: >50K Ratio: 0.103659
+Cluster 55  
+Label: >50K Ratio: 0.867188
+Label: <=50K Ratio: 0.132812
+Cluster 56  
+Label: >50K Ratio: 0.823944
+Label: <=50K Ratio: 0.176056
+Cluster 57  
+Label: <=50K Ratio: 1.000000
+Cluster 58  
+Label: <=50K Ratio: 0.849604
+Label: >50K Ratio: 0.150396
+Cluster 59  
+Label: >50K Ratio: 0.940922
+Label: <=50K Ratio: 0.059078
+Cluster 60  
+Label: >50K Ratio: 0.993878
+Label: <=50K Ratio: 0.006122
+Cluster 61  
+Label: <=50K Ratio: 1.000000
+Cluster 62  
+Label: >50K Ratio: 0.936508
+Label: <=50K Ratio: 0.063492
+Cluster 63  
+Label: <=50K Ratio: 0.981157
+Label: >50K Ratio: 0.018843
+Cluster 64  
+Label: <=50K Ratio: 0.957500
+Label: >50K Ratio: 0.042500
+Cluster 65  
+Label: <=50K Ratio: 0.967153
+Label: >50K Ratio: 0.032847
+Cluster 66  
+Label: <=50K Ratio: 0.972816
+Label: >50K Ratio: 0.027184
+Cluster 67  
+Label: <=50K Ratio: 0.995227
+Label: >50K Ratio: 0.004773
+Cluster 68  
+Label: <=50K Ratio: 0.964912
+Label: >50K Ratio: 0.035088
+Cluster 69  
+Label: <=50K Ratio: 0.942478
+Label: >50K Ratio: 0.057522
+Cluster 70  
+Label: >50K Ratio: 0.975709
+Label: <=50K Ratio: 0.024291
+Cluster 71  
+Label: <=50K Ratio: 0.996139
+Label: >50K Ratio: 0.003861
+Cluster 72  
+Label: <=50K Ratio: 0.838428
+Label: >50K Ratio: 0.161572
+Cluster 73  
+Label: >50K Ratio: 0.769634
+Label: <=50K Ratio: 0.230366
+Cluster 74  
+Label: <=50K Ratio: 0.997725
+Label: >50K Ratio: 0.002275
+Cluster 75  
+Label: <=50K Ratio: 0.967033
+Label: >50K Ratio: 0.032967
+Cluster 76  
+Label: <=50K Ratio: 1.000000
+Cluster 77  
+Label: <=50K Ratio: 0.982372
+Label: >50K Ratio: 0.017628
+Cluster 78  
+Label: >50K Ratio: 0.808081
+Label: <=50K Ratio: 0.191919
+Cluster 79  
+Label: <=50K Ratio: 1.000000
+Cluster 80  
+Label: >50K Ratio: 0.876106
+Label: <=50K Ratio: 0.123894
+Cluster 81  
+Label: <=50K Ratio: 1.000000
+Cluster 82  
+Label: <=50K Ratio: 1.000000
+Cluster 83  
+Label: <=50K Ratio: 0.987705
+Label: >50K Ratio: 0.012295
+Cluster 84  
+Label: >50K Ratio: 0.877301
+Label: <=50K Ratio: 0.122699
+Cluster 85  
+Label: >50K Ratio: 0.955789
+Label: <=50K Ratio: 0.044211
+Cluster 86  
+Label: <=50K Ratio: 0.942982
+Label: >50K Ratio: 0.057018
+Cluster 87  
+Label: <=50K Ratio: 0.987847
+Label: >50K Ratio: 0.012153
+Cluster 88  
+Label: <=50K Ratio: 0.993808
+Label: >50K Ratio: 0.006192
+Cluster 89  
+Label: <=50K Ratio: 0.972973
+Label: >50K Ratio: 0.027027
+Cluster 90  
+Label: <=50K Ratio: 0.847134
+Label: >50K Ratio: 0.152866
+Cluster 91  
+Label: >50K Ratio: 1.000000
+Cluster 92  
+Label: <=50K Ratio: 0.963190
+Label: >50K Ratio: 0.036810
+Cluster 93  
+Label: <=50K Ratio: 0.960000
+Label: >50K Ratio: 0.040000
+Cluster 94  
+Label: >50K Ratio: 0.960000
+Label: <=50K Ratio: 0.040000
+Cluster 95  
+Label: <=50K Ratio: 0.976923
+Label: >50K Ratio: 0.023077
+Cluster 96  
+Label: <=50K Ratio: 0.908108
+Label: >50K Ratio: 0.091892
+Cluster 97  
+Label: <=50K Ratio: 0.960573
+Label: >50K Ratio: 0.039427
+Cluster 98  
+Label: <=50K Ratio: 0.922014
+Label: >50K Ratio: 0.077986
+Cluster 99  
+Label: >50K Ratio: 0.940000
+Label: <=50K Ratio: 0.060000
+Cluster 100  
+Label: <=50K Ratio: 1.000000
+Cluster 101  
+Label: >50K Ratio: 0.646341
+Label: <=50K Ratio: 0.353659
+Cluster 102  
+Label: <=50K Ratio: 0.873684
+Label: >50K Ratio: 0.126316
+Cluster 103  
+Label: <=50K Ratio: 1.000000
+Cluster 104  
+Label: >50K Ratio: 0.993939
+Label: <=50K Ratio: 0.006061
+Cluster 105  
+Label: <=50K Ratio: 1.000000
+Cluster 106  
+Label: >50K Ratio: 0.765101
+Label: <=50K Ratio: 0.234899
+Cluster 107  
+Label: <=50K Ratio: 0.976744
+Label: >50K Ratio: 0.023256
+Cluster 108  
+Label: <=50K Ratio: 0.985507
+Label: >50K Ratio: 0.014493
+Cluster 109  
+Label: <=50K Ratio: 0.990654
+Label: >50K Ratio: 0.009346
+Cluster 110  
+Label: <=50K Ratio: 0.981481
+Label: >50K Ratio: 0.018519
+Cluster 111  
+Label: >50K Ratio: 1.000000
+Cluster 112  
+Label: <=50K Ratio: 0.955556
+Label: >50K Ratio: 0.044444
+Cluster 113  
+Label: <=50K Ratio: 0.980769
+Label: >50K Ratio: 0.019231
+Cluster 114  
+Label: <=50K Ratio: 0.991736
+Label: >50K Ratio: 0.008264
+Cluster 115  
+Label: >50K Ratio: 0.953488
+Label: <=50K Ratio: 0.046512
+Cluster 116  
+Label: <=50K Ratio: 0.998129
+Label: >50K Ratio: 0.001871
+Cluster 117  
+Label: <=50K Ratio: 0.996664
+Label: >50K Ratio: 0.003336
+Cluster 118  
+Label: <=50K Ratio: 0.937500
+Label: >50K Ratio: 0.062500
+Cluster 119  
+Label: <=50K Ratio: 0.942857
+Label: >50K Ratio: 0.057143
+Cluster 120  
+Label: <=50K Ratio: 0.915966
+Label: >50K Ratio: 0.084034
+Cluster 121  
+Label: <=50K Ratio: 0.981818
+Label: >50K Ratio: 0.018182
+Cluster 122  
+Label: >50K Ratio: 0.923729
+Label: <=50K Ratio: 0.076271
+Cluster 123  
+Label: <=50K Ratio: 0.983696
+Label: >50K Ratio: 0.016304
+Cluster 124  
+Label: <=50K Ratio: 0.953488
+Label: >50K Ratio: 0.046512
+Cluster 125  
+Label: <=50K Ratio: 0.976982
+Label: >50K Ratio: 0.023018
+Cluster 126  
+Label: <=50K Ratio: 0.967033
+Label: >50K Ratio: 0.032967
+Cluster 127  
+Label: >50K Ratio: 0.927602
+Label: <=50K Ratio: 0.072398
+Cluster 128  
+Label: <=50K Ratio: 0.945946
+Label: >50K Ratio: 0.054054
+Cluster 129  
+Label: <=50K Ratio: 0.942308
+Label: >50K Ratio: 0.057692
+Cluster 130  
+Label: <=50K Ratio: 0.879310
+Label: >50K Ratio: 0.120690
+Cluster 131  
+Label: <=50K Ratio: 0.993506
+Label: >50K Ratio: 0.006494
+Cluster 132  
+Label: <=50K Ratio: 0.950000
+Label: >50K Ratio: 0.050000
+Cluster 133  
+Label: <=50K Ratio: 0.962761
+Label: >50K Ratio: 0.037239
+Cluster 134  
+Label: <=50K Ratio: 0.956835
+Label: >50K Ratio: 0.043165
+Cluster 135  
+Label: <=50K Ratio: 1.000000
+Cluster 136  
+Label: >50K Ratio: 0.926056
+Label: <=50K Ratio: 0.073944
+Cluster 137  
+Label: <=50K Ratio: 0.954887
+Label: >50K Ratio: 0.045113
+Cluster 138  
+Label: <=50K Ratio: 1.000000
+Cluster 139  
+Label: <=50K Ratio: 0.926087
+Label: >50K Ratio: 0.073913
+Cluster 140  
+Label: <=50K Ratio: 0.980263
+Label: >50K Ratio: 0.019737
+Cluster 141  
+Label: <=50K Ratio: 0.966292
+Label: >50K Ratio: 0.033708
+Cluster 142  
+Label: >50K Ratio: 0.848780
+Label: <=50K Ratio: 0.151220
+Cluster 143  
+Label: <=50K Ratio: 0.992958
+Label: >50K Ratio: 0.007042
+Cluster 144  
+Label: <=50K Ratio: 0.971831
+Label: >50K Ratio: 0.028169
+Cluster 145  
+Label: <=50K Ratio: 0.975446
+Label: >50K Ratio: 0.024554
+Cluster 146  
+Label: <=50K Ratio: 0.988636
+Label: >50K Ratio: 0.011364
+Cluster 147  
+Label: >50K Ratio: 0.903930
+Label: <=50K Ratio: 0.096070
+Cluster 148  
+Label: >50K Ratio: 0.884000
+Label: <=50K Ratio: 0.116000
+Cluster 149  
+Label: >50K Ratio: 1.000000
+Cluster 150  
+Label: <=50K Ratio: 0.986301
+Label: >50K Ratio: 0.013699
+Average Class Ratio
+>50K: 0.259764
+
+<=50K: 0.740236
+
+Inter-Cluster Distance: 49410.787089
+Time: 1440.39s
+
+
+
+Clusters (k): 5
+Samples: 48842
+Class: class
+Cluster Sizes
+Largest: 14190
+Smallest: 7653
+Average: 9768
+Cluster 1  
+Label: <=50K Ratio: 0.818464
+Label: >50K Ratio: 0.181536
+Cluster 2  
+Label: <=50K Ratio: 0.946557
+Label: >50K Ratio: 0.053443
+Cluster 3  
+Label: <=50K Ratio: 0.919851
+Label: >50K Ratio: 0.080149
+Cluster 4  
+Label: <=50K Ratio: 0.980691
+Label: >50K Ratio: 0.019309
+Cluster 5  
+Label: >50K Ratio: 0.835982
+Label: <=50K Ratio: 0.164018
+Average Class Ratio
+>50K: 0.234084
+
+<=50K: 0.765916
+
+Inter-Cluster Distance: 74610.366691
+Time: 1063.67s
+
+
