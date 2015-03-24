@@ -20,7 +20,7 @@ pd.set_option('display.precision',10)
 logger = logging.getLogger('Buckshot')
 logger.setLevel(logging.DEBUG)
 #  create file handler which logs even debug messages
-fh = logging.FileHandler('buckshot.log')
+fh = logging.FileHandler('results_test.log')
 fh.setLevel(logging.DEBUG)
 #  create formatter and add it to the handlers
 formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
@@ -169,6 +169,15 @@ class Buckshot(object):
         self.replace_missing_values()
         self.normalize_data()
 
+    def print_report(self):
+        logger.warn("Samples: %d\n" % len(self.df.index))
+        logger.warn("Class: %s" % self.class_label)
+        logger.warn("\nClusters (k): %d\n" % self.k)
+        sys.stdout.flush()
+        self.cluster_sizes()
+        self.ratios_and_inter_distance()
+        self.print_time()
+
     def load_df(self):
         """Converts the dataset to pandas and numpy friendly file format."""
         if 'arff' in self.dataset:
@@ -310,14 +319,6 @@ class Buckshot(object):
                                 % (progress, i, n, time.time() - self.time))
             sys.stdout.flush()
 
-    def print_report(self):
-        logger.warn("Samples: %d\n" % len(self.df.index))
-        logger.warn("Class: %s" % self.class_label)
-        logger.warn("\nClusters (k): %d\n" % self.k)
-        sys.stdout.flush()
-        self.cluster_sizes()
-        self.ratios_and_inter_distance()
-        self.print_time()
 
     def cluster_sizes(self):
         sizes = np.array([len(clust.values.index) for clust in self.clusters])
@@ -334,6 +335,8 @@ class Buckshot(object):
         for c in self.clusters:
             dist = 0
             clust_number = self.clusters.index(c)
+            ratios['cluster'][clust_number] = 'cluster' + str(clust_number)
+            ratios['n'][clust_number] = len(c.values.index)
             # Intra-Distance
             for i in range(0, len(c.values.index)):
                 row = c.values.iloc[i]
@@ -344,8 +347,8 @@ class Buckshot(object):
             for i,x in c.values[self.class_label].value_counts().iteritems():
                 current_ratio = x/len(c.values.index)
                 logger.warn("Label: %s Ratio: %f" % (i,current_ratio))
-                self.avg_ratio[i] += current_ratio
-                self.ratios
+                self.avg_ratio[i][clust_number] += current_ratio
+                self.ratios[i] = x
 
         logger.warn("Average Class Ratio")
         for i in self.avg_ratio:
@@ -401,8 +404,8 @@ class Buckshot(object):
         fig.set_size_inches(18.5,10.5)
         fig.savefig('graphs/%d-buckshot_%s_%s.png' % (self.k, x_axis, y_axis), dpi=100)
 
-    def plot_ratios(self, x_axis='clusters', y_axis='class'):
-
+    def plot_ratios(self):
+        ax=self.ratios(kind='line', x='cluster', y='n', label='Values ')
 def distance(x, y, squared=False, ignore_class=True):
         """Returns Euclidean distance of two matrices/vectors.
 
