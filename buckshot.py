@@ -7,11 +7,9 @@ from weka.core.converters import Loader, Saver
 import os
 import random
 import math
-import matplotlib as plt
 import time
 import sys
 import logging
-from matplotlib import cm
 
 np.set_printoptions(precision=10)
 pd.set_option('display.precision',10)
@@ -235,14 +233,13 @@ class Buckshot(object):
         self.get_random_samples()
         self.init_matrix()
         n = len(self.clusters)
-        starting = len(self.clusters)
-        total = starting - self.k
+        total = self.sqrt_n - self.k
         # could be a for loop, for _ in range(0,n-self.k)
         while(n > self.k):
             # get index of the two clusters that are closest together
-            num_merged = starting - n
-            progress = num_merged/starting * 100
-            sys.stdout.write("\rHAC  %0.2f%% Complete. Clusters: %d Clusters Merged: %d of %d. Time Elapsed: %.02f"
+            num_merged = self.sqrt_n - n
+            progress = num_merged/total * 100
+            sys.stdout.write("\rHAC  %0.2f%% Complete. Clusters: %d. Clusters Merged: %d of %d. Time Elapsed: %.02fs"
                                 % (progress, n, num_merged, total, (time.time() - self.time)))
             sys.stdout.flush()
             minimum = np.where(self.matrix == self.matrix.min())
@@ -265,7 +262,6 @@ class Buckshot(object):
         # Start with sqrt(n) random clusters
         n = len(self.random.index)
         matrix = np.empty(shape=[n,n])
-
         self.clusters = []
         index = range(0,n)
         # Create the initial distance matrix
@@ -289,9 +285,8 @@ class Buckshot(object):
         """Updates the similarity matrix to account for clusters with > 1 tuple."""
         # create new distance matrix
         n = len(self.clusters)
-        progress =  (self.sqrt_n - n) / (self.sqrt_n - self.k)
         matrix = np.empty(shape=[n,n])
-
+        # Create and redo the matrix
         for cluster1 in self.clusters:
             r1 = cluster1.centroid
             i1 = self.clusters.index(cluster1)
@@ -328,34 +323,41 @@ class Buckshot(object):
         logger.warn("Average: %0.0f\n" % np.mean(sizes))
 
     def ratios_and_inter_distance(self):
+        """Calculates the inter distance with square sum of error and
+            the average class ratio and class ratio per column.
+
+        New Class Members
+            self.ratios (pd.DataFrame): used to plot the ratios of each cluster
+        """
         inter_dist = 0
         self.avg_ratio = {'>50K':0, '<=50K':0}
-        self.ratios = pd.DataFrame([], cols=['cluster', 'n', '>50K', '<=50K'])
+        #columns=['cluster', 'n', '>50K', '<=50K']
+        d = {'cluster':0, 'n':0, '>50K':0, '<=50K':0}
+        self.ratios = pd.DataFrame(data=d, index=range(0,len(self.clusters)))
         # Inter-Distance + Average Ratio
         for c in self.clusters:
             dist = 0
             clust_number = self.clusters.index(c)
-            ratios['cluster'][clust_number] = 'cluster' + str(clust_number)
-            ratios['n'][clust_number] = len(c.values.index)
+            self.ratios['cluster'][clust_number] = str(clust_number+1)
+            self.ratios['n'][clust_number] = len(c.values.index)
             # Intra-Distance
             for i in range(0, len(c.values.index)):
                 row = c.values.iloc[i]
                 dist += distance(row, c.centroid)
             inter_dist += dist
             # Cluster Ratio
-            logger.warn("Cluster %s  " % str(clust_number))
+            logger.warn("Cluster %s  " % str(clust_number+1))
             for i,x in c.values[self.class_label].value_counts().iteritems():
                 current_ratio = x/len(c.values.index)
                 logger.warn("Label: %s Ratio: %f" % (i,current_ratio))
-                self.avg_ratio[i][clust_number] += current_ratio
-                self.ratios[i] = x
+                self.avg_ratio[i] += current_ratio
+                self.ratios[i][clust_number] = current_ratio
 
         logger.warn("Average Class Ratio")
         for i in self.avg_ratio:
             logger.warn("%s: %f\n" % (i,(self.avg_ratio[i]/len(self.clusters))))
         logger.warn("Inter-Cluster Distance: %f\n" % inter_dist)
         self.inter_dist = inter_dist
-        self.avg_ratio = avg_ratio
 
     def print_time(self):
         stop = time.time()
@@ -384,28 +386,43 @@ class Buckshot(object):
 
         ax = self.clusters[0].values.plot(kind='scatter', color=self.colors[0],
                                           label="Cluster1", x=x_axis, y=y_axis)
+        centroid = pd.DataFrame([self.clusters[0].centroid])
+        title = str(self.k) + "-Buckshot Cluster"
+        centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + 1), 
+                      label='Centroid', colors='k', ax=ax)
         fig = ax.get_figure()
-        fig.savefig("graphs/Cluster1-%d-buckshot_%s_%s.png" % (self.k, x_axis, y_axis))
+        fig.savefig("graphs/%d-buckshot-cluster1_%s-%s.png" % (self.k, x_axis, y_axis))
         for i in range(1,len(self.clusters)):
             label = "Cluster" + str(i+1)
             # add to total cluster graph
             self.clusters[i].values.plot(kind='scatter', x=x_axis, y=y_axis,
-                          color=self.colors[i], label=label, ax=ax)
+                                         color=self.colors[i], label=label, ax=ax)
             # create graph for just this cluster
             dx = self.clusters[i].values.plot(kind='scatter', x=x_axis, y=y_axis,
-                                      label=label, color=self.colors[i])
+                                              title=(title+i),label=label, 
+                                              color=self.colors[i])
+            #plot centroids
             centroid = pd.DataFrame([self.clusters[i].centroid])
-            centroid.plot(kind='scatter', x=x_axis, y=y_axis, label='Centroid', colors='k', sharex=True, sharey=True,ax=dx)
-            centroid.plot(kind='scatter', x=x_axis, y=y_axis, label=None, colors='k', sharex=True, sharey=True,ax=ax)
+            centroid.plot(kind='scatter', x=x_axis, y=y_axis, 
+                          label='Centroid', colors='k', ax=dx)
 
             fig = dx.get_figure()
-            fig.savefig("graphs/%s-%d-buckshot_%s_%s.png" % (label, self.k, x_axis, y_axis))
+            fig.savefig("graphs/%d-buckshot-cluster%d_%s-%s.png" % (self.k, i, x_axis, y_axis))
         fig = ax.get_figure()
         fig.set_size_inches(18.5,10.5)
         fig.savefig('graphs/%d-buckshot_%s_%s.png' % (self.k, x_axis, y_axis), dpi=100)
 
     def plot_ratios(self):
-        ax=self.ratios(kind='line', x='cluster', y='n', label='Values ')
+        ax = self.ratios.plot(kind='line', x='cluster', y='n', title="Total Values Count")
+        fig = ax.get_figure()
+        fig.savefig('graphs/%d-buckshot_cluster_populations.png' % self.k)
+        dx = self.ratios.plot(kind='line', x='cluster', y='>50K', title=">50K Ratios")
+        fig = dx.get_figure()
+        fig.savefig('graphs/%d-buckshot_>50K_ratios.png' % self.k)
+        ex = self.ratios.plot(kind='line', x='cluster', y='<=50K', title="<=50K Ratios")
+        fig = ex.get_figure()
+        fig.savefig('graphs/%d-buckshot_<=50K_ratios.png' % self.k)
+
 def distance(x, y, squared=False, ignore_class=True):
         """Returns Euclidean distance of two matrices/vectors.
 
@@ -483,8 +500,8 @@ class BuckshotFileError(Exception):
 def test(runs=5):
     for i in range(2,runs+5):
         b = Buckshot(i*5)
-        b.run()
-        b.print_report()
+        self.run()
+        self.print_report()
 
 
 if __name__ == '__main__':
