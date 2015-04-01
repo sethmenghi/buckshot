@@ -247,7 +247,7 @@ class Buckshot(object):
             minimum = np.where(self.matrix == self.matrix.min())
             min_x = minimum[0][0]
             min_y = minimum[1][0]
-            #print "Minimum: (", min_x,",",min_y,") Distance: ", self.matrix[min_x][min_y]
+            # print "Minimum: (", min_x,",",min_y,") Distance: ", self.matrix[min_x][min_y]
             # remove cluster to be merged into clusters[min_x]
             to_merge = self.clusters.pop(min_y)
             n -= 1
@@ -374,7 +374,7 @@ class Buckshot(object):
         centroid.plot(kind='scatter', x=x_axis, y=y_axis, title=(title + str(1)),
                       label='Centroid', color='k', ax=ax)
         fig = ax.get_figure()
-        fig.savefig("graphs/%d-buckshot-cluster1_%s-%s.png" % (self.k, x_axis, y_axis))
+        fig.savefig("graphs/%s-%s/%d/%d-buckshot-cluster1_%s-%s.png" % (x_axis, y_axis,self.k,self.k, x_axis, y_axis))
         for i in range(1,len(self.clusters)):
             label = "Cluster" + str(i+1)
             # add to total cluster graph
@@ -390,10 +390,10 @@ class Buckshot(object):
                           label='Centroid', color='k', ax=dx)
 
             fig = dx.get_figure()
-            fig.savefig("graphs/%d-buckshot-cluster%d_%s-%s.png" % (self.k, i, x_axis, y_axis))
+            fig.savefig("graphs/%s-%s/%d/%d-buckshot-cluster%d_%s-%s.png" % (x_axis, y_axis,self.k,self.k, i, x_axis, y_axis))
         fig = ax.get_figure()
         fig.set_size_inches(18.5,10.5)
-        fig.savefig('graphs/%d-buckshot_%s_%s.png' % (self.k, x_axis, y_axis), dpi=100)
+        fig.savefig('graphs/all/%d-buckshot_%s_%s.png' % (self.k, x_axis, y_axis), dpi=100)
 
     def plot_ratios(self):
         ax = self.ratios.plot(kind='line', x='cluster', y='n', title="Total Values Count")
@@ -489,7 +489,7 @@ def test(runs=5):
         b.run()
         b.print_report()
         b.plot_clusters()
-        b.plot_ratios()
+        #b.plot_ratios()
         b.plot_clusters(x_axis='education_num', y_axis='capital_gain')
         b.plot_clusters(x_axis='education_num', y_axis='hours_per_week')
 
@@ -499,4 +499,3 @@ if __name__ == '__main__':
     b.run()
     b.print_report()
     b.plot_clusters()
-    b.plot_ratios()
